@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Sass 기본 내장 함수 | 고경남</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    
+    <meta name="description" content="연습장.">
+    
+    <link rel="preload" href="/assets/css/0.styles.e2723a0b.css" as="style"><link rel="preload" href="/assets/js/app.62f7a21e.js" as="script"><link rel="preload" href="/assets/js/2.8c086c35.js" as="script"><link rel="preload" href="/assets/js/18.4fa40ab1.js" as="script"><link rel="prefetch" href="/assets/js/10.7f98dd7c.js"><link rel="prefetch" href="/assets/js/11.a5c0a951.js"><link rel="prefetch" href="/assets/js/12.db38025a.js"><link rel="prefetch" href="/assets/js/13.f2c4f3f8.js"><link rel="prefetch" href="/assets/js/14.bcbae7a9.js"><link rel="prefetch" href="/assets/js/15.a3a94ccc.js"><link rel="prefetch" href="/assets/js/16.4d5a2735.js"><link rel="prefetch" href="/assets/js/17.7ebc4ae1.js"><link rel="prefetch" href="/assets/js/19.6ca6f5d7.js"><link rel="prefetch" href="/assets/js/20.7f21ec16.js"><link rel="prefetch" href="/assets/js/21.dec8ac43.js"><link rel="prefetch" href="/assets/js/22.aa7b2071.js"><link rel="prefetch" href="/assets/js/3.3460040e.js"><link rel="prefetch" href="/assets/js/4.3e0b7ae7.js"><link rel="prefetch" href="/assets/js/5.e9db8a94.js"><link rel="prefetch" href="/assets/js/6.2b33bffc.js"><link rel="prefetch" href="/assets/js/7.8f48b41d.js"><link rel="prefetch" href="/assets/js/8.6173a014.js"><link rel="prefetch" href="/assets/js/9.38e5bc4c.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.e2723a0b.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">고경남</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="stable diffusion" class="dropdown-title"><span class="title">stable diffusion</span> <span class="arrow down"></span></button> <button type="button" aria-label="stable diffusion" class="mobile-dropdown-title"><span class="title">stable diffusion</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/post/sd/basic.html" class="nav-link">
+  Basic
+</a></li><li class="dropdown-item"><!----> <a href="/post/sd/lora.html" class="nav-link">
+  LoRA
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Node.js" class="dropdown-title"><span class="title">Node.js</span> <span class="arrow down"></span></button> <button type="button" aria-label="Node.js" class="mobile-dropdown-title"><span class="title">Node.js</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          Node
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/post/node/node.html" class="nav-link">
+  Basic
+</a></li><li class="dropdown-subitem"><a href="/post/node/module.html" class="nav-link">
+  Module
+</a></li><li class="dropdown-subitem"><a href="/post/node/npm.html" class="nav-link">
+  NPM
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Package
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/post/node/express.html" class="nav-link">
+  Express
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Javascript" class="dropdown-title"><span class="title">Javascript</span> <span class="arrow down"></span></button> <button type="button" aria-label="Javascript" class="mobile-dropdown-title"><span class="title">Javascript</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/post/js/convention/" class="nav-link">
+  코딩컨벤션
+</a></li><li class="dropdown-item"><h4>
+          Javascript
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/post/js/javascript/" class="nav-link">
+  Javascript
+</a></li><li class="dropdown-subitem"><a href="/post/js/es6/" class="nav-link">
+  ES6
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Library
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/post/js/jquery.html" class="nav-link">
+  Jquery
+</a></li><li class="dropdown-subitem"><a href="/post/js/highchart.html" class="nav-link">
+  Highcharts
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Sass" class="dropdown-title"><span class="title">Sass</span> <span class="arrow down"></span></button> <button type="button" aria-label="Sass" class="mobile-dropdown-title"><span class="title">Sass</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/post/sass/sass.html" class="nav-link">
+  Sass
+</a></li><li class="dropdown-item"><!----> <a href="/post/sass/function.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  내장함수
+</a></li><li class="dropdown-item"><!----> <a href="/post/sass/webpack.html" class="nav-link">
+  Webpack 개발환경에서 sass
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="stable diffusion" class="dropdown-title"><span class="title">stable diffusion</span> <span class="arrow down"></span></button> <button type="button" aria-label="stable diffusion" class="mobile-dropdown-title"><span class="title">stable diffusion</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/post/sd/basic.html" class="nav-link">
+  Basic
+</a></li><li class="dropdown-item"><!----> <a href="/post/sd/lora.html" class="nav-link">
+  LoRA
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Node.js" class="dropdown-title"><span class="title">Node.js</span> <span class="arrow down"></span></button> <button type="button" aria-label="Node.js" class="mobile-dropdown-title"><span class="title">Node.js</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          Node
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/post/node/node.html" class="nav-link">
+  Basic
+</a></li><li class="dropdown-subitem"><a href="/post/node/module.html" class="nav-link">
+  Module
+</a></li><li class="dropdown-subitem"><a href="/post/node/npm.html" class="nav-link">
+  NPM
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Package
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/post/node/express.html" class="nav-link">
+  Express
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Javascript" class="dropdown-title"><span class="title">Javascript</span> <span class="arrow down"></span></button> <button type="button" aria-label="Javascript" class="mobile-dropdown-title"><span class="title">Javascript</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/post/js/convention/" class="nav-link">
+  코딩컨벤션
+</a></li><li class="dropdown-item"><h4>
+          Javascript
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/post/js/javascript/" class="nav-link">
+  Javascript
+</a></li><li class="dropdown-subitem"><a href="/post/js/es6/" class="nav-link">
+  ES6
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Library
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/post/js/jquery.html" class="nav-link">
+  Jquery
+</a></li><li class="dropdown-subitem"><a href="/post/js/highchart.html" class="nav-link">
+  Highcharts
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Sass" class="dropdown-title"><span class="title">Sass</span> <span class="arrow down"></span></button> <button type="button" aria-label="Sass" class="mobile-dropdown-title"><span class="title">Sass</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/post/sass/sass.html" class="nav-link">
+  Sass
+</a></li><li class="dropdown-item"><!----> <a href="/post/sass/function.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  내장함수
+</a></li><li class="dropdown-item"><!----> <a href="/post/sass/webpack.html" class="nav-link">
+  Webpack 개발환경에서 sass
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Sass 기본 내장 함수</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/post/sass/function.html#number-functions" class="sidebar-link">Number Functions</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/post/sass/function.html#introspection-functions" class="sidebar-link">Introspection Functions</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/post/sass/function.html#string-functions" class="sidebar-link">String Functions</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/post/sass/function.html#list-functions" class="sidebar-link">List Functions</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/post/sass/function.html#map-functions" class="sidebar-link">Map Functions</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/post/sass/function.html#color-functions" class="sidebar-link">Color Functions</a><ul class="sidebar-sub-headers"></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="sass-기본-내장-함수"><a href="#sass-기본-내장-함수" class="header-anchor">#</a> Sass 기본 내장 함수</h1> <h2 id="number-functions"><a href="#number-functions" class="header-anchor">#</a> Number Functions</h2> <ul><li>숫자값을 %로 변환</li></ul> <div class="language- extra-class"><pre class="language-text"><code>percentage(0.2)          =&gt; 20%
+percentage(100px / 50px) =&gt; 200%
+</code></pre></div><ul><li>소숫점 이하 반올림</li></ul> <div class="language- extra-class"><pre class="language-text"><code>round(10.4px) =&gt; 10px
+round(10.6px) =&gt; 11px
+</code></pre></div><ul><li>소숫점 이하 올림</li></ul> <div class="language- extra-class"><pre class="language-text"><code>ceil(10.4px) =&gt; 11px
+ceil(10.6px) =&gt; 11px
+</code></pre></div><ul><li>소숫점 이하 절사</li></ul> <div class="language- extra-class"><pre class="language-text"><code>floor(10.4px) =&gt; 10px
+floor(10.6px) =&gt; 10px
+</code></pre></div><ul><li>절대값 취득</li></ul> <div class="language- extra-class"><pre class="language-text"><code>abs(10px) =&gt; 10px
+abs(-10px) =&gt; 10px
+</code></pre></div><h2 id="introspection-functions"><a href="#introspection-functions" class="header-anchor">#</a> Introspection Functions</h2> <ul><li>Data type 취득</li></ul> <div class="language- extra-class"><pre class="language-text"><code>type-of(100px)  =&gt; number
+type-of(asdf)   =&gt; string
+type-of(&quot;asdf&quot;) =&gt; string
+type-of(true)   =&gt; bool
+type-of(#fff)   =&gt; color
+type-of(blue)   =&gt; color
+</code></pre></div><ul><li>Data unit 취득</li></ul> <div class="language- extra-class"><pre class="language-text"><code>unit(100)   =&gt; &quot;&quot;
+unit(100px) =&gt; &quot;px&quot;
+unit(3em)   =&gt; &quot;em&quot;
+unit(10px * 5em) =&gt; &quot;em*px&quot;
+unit(10px * 5em / 30cm / 1rem) =&gt; &quot;em*px/cm*rem&quot;
+</code></pre></div><ul><li>값에 단위가 있는지 확인</li></ul> <div class="language- extra-class"><pre class="language-text"><code>unitless(100)   =&gt; true
+unitless(100px) =&gt; false
+#2.4 2개의 값을 합산, 감산, 비교 가능한지 확인
+comparable(2px, 1px)   =&gt; true
+comparable(100px, 3em) =&gt; false
+comparable(10cm, 3mm)  =&gt; true
+</code></pre></div><h2 id="string-functions"><a href="#string-functions" class="header-anchor">#</a> String Functions</h2> <ul><li>따옴표 붙이기</li></ul> <div class="language- extra-class"><pre class="language-text"><code>quote(&quot;foo&quot;) =&gt; &quot;foo&quot;
+quote(foo)   =&gt; &quot;foo&quot;
+</code></pre></div><ul><li>따옴표 제거</li></ul> <div class="language- extra-class"><pre class="language-text"><code>unquote(&quot;foo&quot;) =&gt; foo
+unquote(foo)   =&gt; foo
+</code></pre></div><h2 id="list-functions"><a href="#list-functions" class="header-anchor">#</a> List Functions</h2> <ul><li>리스트 요소수 취득</li></ul> <div class="language- extra-class"><pre class="language-text"><code>length(10px)                        =&gt; 1
+length(10px 20px 30px)              =&gt; 3
+length((width: 10px, height: 20px)) =&gt; 2
+</code></pre></div><ul><li>리스트의 n번째 요소 취득</li></ul> <div class="language- extra-class"><pre class="language-text"><code>nth(10px 20px 30px, 1)                 =&gt; 10px
+nth((Helvetica, Arial, sans-serif), 3) =&gt; sans-serif
+nth((width: 10px, length: 20px), 2)    =&gt; length 20px
+
+$n: nth(width: 10px, length: 20px);
+nth(($n, 2), 1)                        =&gt; length
+</code></pre></div><ul><li>요소의 index 취득</li></ul> <div class="language- extra-class"><pre class="language-text"><code>index(1px solid red, solid)                       =&gt; 2
+index(1px solid red, dashed)                      =&gt; null
+index((width: 10px, height: 20px), (height 20px)) =&gt; 2
+</code></pre></div><ul><li>리스트의 마지막에 단일 요소 추가</li></ul> <div class="language- extra-class"><pre class="language-text"><code>append(10px 20px, 30px)      =&gt; 10px 20px 30px
+append((blue, red), green)   =&gt; blue, red, green
+append(10px 20px, 30px 40px) =&gt; 10px 20px (30px 40px)
+append(10px, 20px, comma)    =&gt; 10px, 20px
+append((blue, red), green, space) =&gt; blue red green
+</code></pre></div><ul><li>리스트와 리스트의 결합</li></ul> <div class="language- extra-class"><pre class="language-text"><code>join(10px 20px, 30px 40px)      =&gt; 10px 20px 30px 40px
+join((blue, red), (#abc, #def)) =&gt; blue, red, #abc, #def
+join(10px, 20px)                =&gt; 10px 20px
+join(10px, 20px, comma)         =&gt; 10px, 20px
+join((blue, red), (#abc, #def), space) =&gt; blue red #abc #def
+</code></pre></div><ul><li>복수의 리스트를 각자의 순서에 맞추어 재결합</li></ul> <div class="language- extra-class"><pre class="language-text"><code>zip(1px 1px 3px, solid dashed solid, red green blue)
+=&gt; 1px solid red, 1px dashed green, 3px solid blue
+</code></pre></div><h2 id="map-functions"><a href="#map-functions" class="header-anchor">#</a> Map Functions</h2> <div class="language- extra-class"><pre class="language-text"><code>// key로 value 취득
+map-get((&quot;foo&quot;: 1, &quot;bar&quot;: 2), &quot;foo&quot;) =&gt; 1
+map-get((&quot;foo&quot;: 1, &quot;bar&quot;: 2), &quot;bar&quot;) =&gt; 2
+map-get((&quot;foo&quot;: 1, &quot;bar&quot;: 2), &quot;baz&quot;) =&gt; null
+</code></pre></div><h2 id="color-functions"><a href="#color-functions" class="header-anchor">#</a> Color Functions</h2> <ul><li>색상(hue) 변경</li></ul> <div class="language- extra-class"><pre class="language-text"><code>$base-color: #ad141e;
+
+.adjust-hue {
+  color: adjust-hue($base-color, 20%);
+  // =&gt; #ad3d14
+}
+adjust-hue
+</code></pre></div><ul><li>채도(saturation) 변경</li></ul> <div class="language- extra-class"><pre class="language-text"><code>$base-color: #ad141e;
+
+p {
+  .saturate {
+    color: saturate($base-color, 20%);
+  }
+
+  .desaturate {
+    color: desaturate($base-color, 20%);
+  }
+}
+</code></pre></div><ul><li>휘도(lightness) 변경</li></ul> <div class="language- extra-class"><pre class="language-text"><code>$base-color: #ad141e;
+
+p {
+  .darken {
+    color: darken($base-color, 10%);
+  }
+
+  .lighten {
+    color: lighten($base-color, 10%);
+  }
+}
+</code></pre></div><ul><li>투명도(opacity) 변경</li></ul> <div class="language- extra-class"><pre class="language-text"><code>$base-color: #ad141e;
+
+.rgba {
+  color: rgba($base-color, .7);
+}
+
+/*
+.rgba {
+  color: rgba(173, 20, 30, 0.7); }
+*/
+</code></pre></div><ul><li>alpha 연산</li></ul> <div class="language- extra-class"><pre class="language-text"><code>$base-color: rgba(255, 0, 0, 0.5);
+
+// alpha +
+// 불투명도를 증가시킨다.(더 불투명해진다)
+.opacify {
+  color: opacify($base-color, 0.3);
+}
+
+// alpha -
+// 불투명도를 감소시킨다.(더 투명해진다)
+.transparentize {
+  color: transparentize($base-color, 0.25);
+}
+
+/*
+.opacify {
+  color: rgba(255, 0, 0, 0.8); }
+
+.transparentize {
+  color: rgba(255, 0, 0, 0.25); }
+*/
+</code></pre></div><ul><li>Tint &amp; Shade
+색상은 흰색(tint)과 검정색(shade)의 값으로 혼합되며 darken, lighten과 유사하다.</li></ul> <div class="language- extra-class"><pre class="language-text"><code>$base-color: #ad141e;
+
+.tint {
+  color: tint($base-color, 10%);
+}
+
+.shade {
+  color: shade($base-color, 10%);
+}
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.62f7a21e.js" defer></script><script src="/assets/js/2.8c086c35.js" defer></script><script src="/assets/js/18.4fa40ab1.js" defer></script>
+  </body>
+</html>

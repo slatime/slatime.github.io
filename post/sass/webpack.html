@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Webpack 개발 환경에서 Sass사용하기 | 고경남</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    
+    <meta name="description" content="연습장.">
+    
+    <link rel="preload" href="/assets/css/0.styles.e2723a0b.css" as="style"><link rel="preload" href="/assets/js/app.62f7a21e.js" as="script"><link rel="preload" href="/assets/js/2.8c086c35.js" as="script"><link rel="preload" href="/assets/js/20.7f21ec16.js" as="script"><link rel="prefetch" href="/assets/js/10.7f98dd7c.js"><link rel="prefetch" href="/assets/js/11.a5c0a951.js"><link rel="prefetch" href="/assets/js/12.db38025a.js"><link rel="prefetch" href="/assets/js/13.f2c4f3f8.js"><link rel="prefetch" href="/assets/js/14.bcbae7a9.js"><link rel="prefetch" href="/assets/js/15.a3a94ccc.js"><link rel="prefetch" href="/assets/js/16.4d5a2735.js"><link rel="prefetch" href="/assets/js/17.7ebc4ae1.js"><link rel="prefetch" href="/assets/js/18.4fa40ab1.js"><link rel="prefetch" href="/assets/js/19.6ca6f5d7.js"><link rel="prefetch" href="/assets/js/21.dec8ac43.js"><link rel="prefetch" href="/assets/js/22.aa7b2071.js"><link rel="prefetch" href="/assets/js/3.3460040e.js"><link rel="prefetch" href="/assets/js/4.3e0b7ae7.js"><link rel="prefetch" href="/assets/js/5.e9db8a94.js"><link rel="prefetch" href="/assets/js/6.2b33bffc.js"><link rel="prefetch" href="/assets/js/7.8f48b41d.js"><link rel="prefetch" href="/assets/js/8.6173a014.js"><link rel="prefetch" href="/assets/js/9.38e5bc4c.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.e2723a0b.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">고경남</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="stable diffusion" class="dropdown-title"><span class="title">stable diffusion</span> <span class="arrow down"></span></button> <button type="button" aria-label="stable diffusion" class="mobile-dropdown-title"><span class="title">stable diffusion</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/post/sd/basic.html" class="nav-link">
+  Basic
+</a></li><li class="dropdown-item"><!----> <a href="/post/sd/lora.html" class="nav-link">
+  LoRA
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Node.js" class="dropdown-title"><span class="title">Node.js</span> <span class="arrow down"></span></button> <button type="button" aria-label="Node.js" class="mobile-dropdown-title"><span class="title">Node.js</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          Node
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/post/node/node.html" class="nav-link">
+  Basic
+</a></li><li class="dropdown-subitem"><a href="/post/node/module.html" class="nav-link">
+  Module
+</a></li><li class="dropdown-subitem"><a href="/post/node/npm.html" class="nav-link">
+  NPM
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Package
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/post/node/express.html" class="nav-link">
+  Express
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Javascript" class="dropdown-title"><span class="title">Javascript</span> <span class="arrow down"></span></button> <button type="button" aria-label="Javascript" class="mobile-dropdown-title"><span class="title">Javascript</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/post/js/convention/" class="nav-link">
+  코딩컨벤션
+</a></li><li class="dropdown-item"><h4>
+          Javascript
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/post/js/javascript/" class="nav-link">
+  Javascript
+</a></li><li class="dropdown-subitem"><a href="/post/js/es6/" class="nav-link">
+  ES6
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Library
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/post/js/jquery.html" class="nav-link">
+  Jquery
+</a></li><li class="dropdown-subitem"><a href="/post/js/highchart.html" class="nav-link">
+  Highcharts
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Sass" class="dropdown-title"><span class="title">Sass</span> <span class="arrow down"></span></button> <button type="button" aria-label="Sass" class="mobile-dropdown-title"><span class="title">Sass</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/post/sass/sass.html" class="nav-link">
+  Sass
+</a></li><li class="dropdown-item"><!----> <a href="/post/sass/function.html" class="nav-link">
+  내장함수
+</a></li><li class="dropdown-item"><!----> <a href="/post/sass/webpack.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  Webpack 개발환경에서 sass
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="stable diffusion" class="dropdown-title"><span class="title">stable diffusion</span> <span class="arrow down"></span></button> <button type="button" aria-label="stable diffusion" class="mobile-dropdown-title"><span class="title">stable diffusion</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/post/sd/basic.html" class="nav-link">
+  Basic
+</a></li><li class="dropdown-item"><!----> <a href="/post/sd/lora.html" class="nav-link">
+  LoRA
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Node.js" class="dropdown-title"><span class="title">Node.js</span> <span class="arrow down"></span></button> <button type="button" aria-label="Node.js" class="mobile-dropdown-title"><span class="title">Node.js</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          Node
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/post/node/node.html" class="nav-link">
+  Basic
+</a></li><li class="dropdown-subitem"><a href="/post/node/module.html" class="nav-link">
+  Module
+</a></li><li class="dropdown-subitem"><a href="/post/node/npm.html" class="nav-link">
+  NPM
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Package
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/post/node/express.html" class="nav-link">
+  Express
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Javascript" class="dropdown-title"><span class="title">Javascript</span> <span class="arrow down"></span></button> <button type="button" aria-label="Javascript" class="mobile-dropdown-title"><span class="title">Javascript</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/post/js/convention/" class="nav-link">
+  코딩컨벤션
+</a></li><li class="dropdown-item"><h4>
+          Javascript
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/post/js/javascript/" class="nav-link">
+  Javascript
+</a></li><li class="dropdown-subitem"><a href="/post/js/es6/" class="nav-link">
+  ES6
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Library
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/post/js/jquery.html" class="nav-link">
+  Jquery
+</a></li><li class="dropdown-subitem"><a href="/post/js/highchart.html" class="nav-link">
+  Highcharts
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Sass" class="dropdown-title"><span class="title">Sass</span> <span class="arrow down"></span></button> <button type="button" aria-label="Sass" class="mobile-dropdown-title"><span class="title">Sass</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/post/sass/sass.html" class="nav-link">
+  Sass
+</a></li><li class="dropdown-item"><!----> <a href="/post/sass/function.html" class="nav-link">
+  내장함수
+</a></li><li class="dropdown-item"><!----> <a href="/post/sass/webpack.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  Webpack 개발환경에서 sass
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Webpack 개발 환경에서 Sass사용하기</span> <!----></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="webpack-개발-환경에서-sass사용하기"><a href="#webpack-개발-환경에서-sass사용하기" class="header-anchor">#</a> Webpack 개발 환경에서 Sass사용하기</h1> <ul><li>Webpack 개발 환경에서 Sass를 사용해보자. 먼저 다음 명령을 사용해 필요한 패키지를 설치한다.</li></ul> <div class="language-bash extra-class"><pre class="language-bash"><code>$ <span class="token function">npm</span> <span class="token function">install</span> --save-dev webpack webpack-cli css-loader sass sass-loader mini-css-extract-plugin
+</code></pre></div><p>package.json은 다음과 같다. npm scripts에 build를 추가한다.</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;sass-project&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;version&quot;</span><span class="token operator">:</span> <span class="token string">&quot;1.0.0&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;description&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;main&quot;</span><span class="token operator">:</span> <span class="token string">&quot;index.js&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;scripts&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;build&quot;</span><span class="token operator">:</span> <span class="token string">&quot;webpack -w&quot;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;keywords&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;author&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;license&quot;</span><span class="token operator">:</span> <span class="token string">&quot;ISC&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;devDependencies&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;css-loader&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^5.0.2&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;mini-css-extract-plugin&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^1.3.6&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;sass&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^1.32.7&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;sass-loader&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^11.0.1&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;webpack&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^5.21.2&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;webpack-cli&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^4.5.0&quot;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>프로젝트 루트에 webpack.config.js 파일을 생성하고 다음과 같이 수정한다.</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> path <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'path'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> MiniCssExtractPlugin <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'mini-css-extract-plugin'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token literal-property property">entry</span><span class="token operator">:</span> <span class="token string">'./src/sass/foo.scss'</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">output</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">path</span><span class="token operator">:</span> path<span class="token punctuation">.</span><span class="token function">resolve</span><span class="token punctuation">(</span>__dirname<span class="token punctuation">,</span> <span class="token string">'public'</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">plugins</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token comment">// 컴파일 + 번들링 CSS 파일이 저장될 경로와 이름 지정</span>
+    <span class="token keyword">new</span> <span class="token class-name">MiniCssExtractPlugin</span><span class="token punctuation">(</span><span class="token punctuation">{</span> <span class="token literal-property property">filename</span><span class="token operator">:</span> <span class="token string">'css/style.css'</span> <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">module</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">rules</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+      <span class="token punctuation">{</span>
+        <span class="token literal-property property">test</span><span class="token operator">:</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">\.s[ac]ss$</span><span class="token regex-delimiter">/</span><span class="token regex-flags">i</span></span><span class="token punctuation">,</span>
+        <span class="token literal-property property">use</span><span class="token operator">:</span> <span class="token punctuation">[</span>MiniCssExtractPlugin<span class="token punctuation">.</span>loader<span class="token punctuation">,</span> <span class="token string">'css-loader'</span><span class="token punctuation">,</span> <span class="token string">'sass-loader'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+        <span class="token literal-property property">exclude</span><span class="token operator">:</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">node_modules</span><span class="token regex-delimiter">/</span></span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">devtool</span><span class="token operator">:</span> <span class="token string">'source-map'</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">mode</span><span class="token operator">:</span> <span class="token string">'development'</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><p>다음 명령으로 빌드를 실행하면 webpack.config.js 파일에 지정한 경로(‘public/css/style.css’)에 컴파일되어 번들링된 css 파일이 저장된다.</p> <div class="language-bash extra-class"><pre class="language-bash"><code>$ <span class="token function">npm</span> run build
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.62f7a21e.js" defer></script><script src="/assets/js/2.8c086c35.js" defer></script><script src="/assets/js/20.7f21ec16.js" defer></script>
+  </body>
+</html>
