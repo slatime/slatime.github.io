@@ -15,7 +15,7 @@ git add -A
 git commit -m 'deploy'
 
 # https://<USERNAME>.github.io 에 배포하는 경우
-git push -f https://github.com/slatime/slatime.github.io.git master:gh-pages
+git push -f https://github.com/slatime/slatime.github.io.git master
 
 # https://<USERNAME>.github.io/<REPO> 에 배포하는 경우
 # git push -f https://github.com/slatime/slatime.github.io.git master:gh-pages

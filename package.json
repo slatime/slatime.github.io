@@ -6,7 +6,8 @@
   "author": "slatime <slatime@naver.com>",
   "scripts": {
     "docs:dev": "vuepress dev",
-    "docs:build": "vuepress build"
+    "docs:build": "vuepress build",
+    "deploy": "git push origin `git subtree split --prefix build master`:gh-pages --force"
   },
   "license": "MIT",
   "devDependencies": {
