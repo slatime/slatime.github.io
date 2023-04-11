@@ -65,8 +65,6 @@ Stablilty.ai 에서는 Latent Diffusion Model과 고품질 이미지 데이터�
 ## Stable Diffusion Web UI
  - 웹 기반의 유저 인터페이스("Web UI")를 통해 Stable Diffusion 모델을 편리하게 사용할 수 있도록 만들어 놓은 프로젝트이다.<br>개발자의 꾸준한 업데이트를 통해, Stable Diffusion의 프론트엔드 기능 외에도 GFPGAN 보정, ESRGAN 업스케일링, Textual Inversion 등 다양한 기능을 도입하고 있다.
 
- // slatime.github.io
-
 
  ## 간단한 용어 정리 
 - stable-diffusion-webui : 내 컴퓨터에 설치하는 AI 그림 뽑기 툴
