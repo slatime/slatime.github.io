@@ -1,0 +1,18 @@
+{
+  "name": "gitpg",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/slatime/slatime.github.io.git",
+  "author": "slatime <slatime@naver.com>",
+  "scripts": {
+    "docs:dev": "vuepress dev",
+    "docs:build": "vuepress build"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^1.9.7"
+  },
+  "dependencies": {
+    "vuepress-theme-default-prefers-color-scheme": "^2.0.0"
+  }
+}
