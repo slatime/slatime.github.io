@@ -32,6 +32,12 @@ module.exports = {
                 { text: 'Express', link: '/post/node/express'},
               ]
             },
+            { 
+              text: 'MVC pattern',
+              items: [
+                { text: '초기설정', link: '/post/node/mvc1'},
+              ]
+            },
           ]
         },
         { 
