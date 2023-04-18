@@ -35,7 +35,8 @@ module.exports = {
             { 
               text: 'MVC pattern',
               items: [
-                { text: '초기설정', link: '/post/node/mvc1'},
+                { text: 'MVC 1', link: '/post/node/mvc1'},
+                { text: 'MVC 2', link: '/post/node/mvc2'},
               ]
             },
           ]
@@ -74,4 +75,4 @@ module.exports = {
       ],
       sidebar: 'auto' // h1~h6 같은 heading tag를 기준으로 sidebar를 만들어줌
     }
-  }
+}
