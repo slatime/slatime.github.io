@@ -3,7 +3,7 @@
 -   [Sass(Syntactically Awesome StyleSheets)](https://sass-lang.com/)는 CSS pre-processor로서 CSS의 한계와 단점을 보완하여 보다 가독성이 높고 코드의 재사용에 유리한 CSS를 생성하기 위한 CSS의 확장(extension)이다.
 -   Sass추가 기능
 
-    -   변수의 사용1
+    -   변수의 사용
     -   조건문과 반복문
     -   Import
     -   Nesting
