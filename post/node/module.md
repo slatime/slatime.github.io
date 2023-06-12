@@ -1,5 +1,3 @@
-st
-
 # module, npm
 
 ## 모듈화와 CommonJS
