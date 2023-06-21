@@ -181,7 +181,7 @@ let multipleSelected = [];
 {#key reset }
   <Count/>
 {/key}
-
+ 
 <button on:click={() => reset = !reset}> reset</button>
 ```
 
