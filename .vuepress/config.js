@@ -61,6 +61,11 @@ module.exports = {
         ],
       },
       {
+        text: "Typescript",
+        ariaLabel: "Typescript",
+        items: [{ text: "Typescript", link: "/post/ts/ts" }],
+      },
+      {
         text: "Sass",
         ariaLabel: "Sass",
         items: [
