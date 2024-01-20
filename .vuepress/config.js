@@ -24,6 +24,7 @@ module.exports = {
               { text: 'Basic', link: '/post/node/node' },
               { text: 'Module', link: '/post/node/module' },
               { text: 'NPM', link: '/post/node/npm' },
+              { text: 'Axios', link: '/post/node/Axios' },
             ],
           },
           {
