@@ -50,6 +50,7 @@ module.exports = {
             items: [
               { text: 'Javascript', link: '/post/js/javascript/' },
               { text: 'ES6', link: '/post/js/es6/' },
+              {text:'this', link:'/post/js/this/'},
             ],
           },
           {
