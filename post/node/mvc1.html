@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Express + MVC pattern | 고경남</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    
+    <meta name="description" content="연습장.">
+    
+    <link rel="preload" href="/assets/css/0.styles.e2723a0b.css" as="style"><link rel="preload" href="/assets/js/app.29dff864.js" as="script"><link rel="preload" href="/assets/js/2.8c086c35.js" as="script"><link rel="preload" href="/assets/js/18.3f3cea5b.js" as="script"><link rel="prefetch" href="/assets/js/10.e5153f6e.js"><link rel="prefetch" href="/assets/js/11.92e812da.js"><link rel="prefetch" href="/assets/js/12.1022eaa7.js"><link rel="prefetch" href="/assets/js/13.60db4ab7.js"><link rel="prefetch" href="/assets/js/14.bdd44910.js"><link rel="prefetch" href="/assets/js/15.2dcf2b16.js"><link rel="prefetch" href="/assets/js/16.21036071.js"><link rel="prefetch" href="/assets/js/17.cc26dbe7.js"><link rel="prefetch" href="/assets/js/19.85f817bd.js"><link rel="prefetch" href="/assets/js/20.efd3a183.js"><link rel="prefetch" href="/assets/js/21.bf3f59f1.js"><link rel="prefetch" href="/assets/js/22.3af5ebbf.js"><link rel="prefetch" href="/assets/js/23.ac8453a4.js"><link rel="prefetch" href="/assets/js/24.2204804b.js"><link rel="prefetch" href="/assets/js/25.cf9f7393.js"><link rel="prefetch" href="/assets/js/26.253d56a6.js"><link rel="prefetch" href="/assets/js/27.3a7ed242.js"><link rel="prefetch" href="/assets/js/28.11809295.js"><link rel="prefetch" href="/assets/js/29.cc95f5e0.js"><link rel="prefetch" href="/assets/js/3.7f06d359.js"><link rel="prefetch" href="/assets/js/30.37100097.js"><link rel="prefetch" href="/assets/js/31.363c8a2f.js"><link rel="prefetch" href="/assets/js/32.e93d1b5b.js"><link rel="prefetch" href="/assets/js/33.f104e35d.js"><link rel="prefetch" href="/assets/js/34.b4ad1509.js"><link rel="prefetch" href="/assets/js/35.647638e0.js"><link rel="prefetch" href="/assets/js/36.67ebb81e.js"><link rel="prefetch" href="/assets/js/4.3e0b7ae7.js"><link rel="prefetch" href="/assets/js/5.e9db8a94.js"><link rel="prefetch" href="/assets/js/6.2b33bffc.js"><link rel="prefetch" href="/assets/js/7.c56bbca5.js"><link rel="prefetch" href="/assets/js/8.5a47bc42.js"><link rel="prefetch" href="/assets/js/9.a7409ac4.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.e2723a0b.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">고경남</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="stable diffusion" class="dropdown-title"><span class="title">stable diffusion</span> <span class="arrow down"></span></button> <button type="button" aria-label="stable diffusion" class="mobile-dropdown-title"><span class="title">stable diffusion</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/post/sd/basic.html" class="nav-link">
+  Basic
+</a></li><li class="dropdown-item"><!----> <a href="/post/sd/lora.html" class="nav-link">
+  LoRA
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Node.js" class="dropdown-title"><span class="title">Node.js</span> <span class="arrow down"></span></button> <button type="button" aria-label="Node.js" class="mobile-dropdown-title"><span class="title">Node.js</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          Node
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/post/node/node.html" class="nav-link">
+  Basic
+</a></li><li class="dropdown-subitem"><a href="/post/node/module.html" class="nav-link">
+  Module
+</a></li><li class="dropdown-subitem"><a href="/post/node/npm.html" class="nav-link">
+  NPM
+</a></li><li class="dropdown-subitem"><a href="/post/node/Axios.html" class="nav-link">
+  Axios
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Package
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/post/node/express.html" class="nav-link">
+  Express
+</a></li></ul></li><li class="dropdown-item"><h4>
+          MVC pattern
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/post/node/mvc1.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  MVC 1
+</a></li><li class="dropdown-subitem"><a href="/post/node/mvc2.html" class="nav-link">
+  MVC 2
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Javascript" class="dropdown-title"><span class="title">Javascript</span> <span class="arrow down"></span></button> <button type="button" aria-label="Javascript" class="mobile-dropdown-title"><span class="title">Javascript</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/post/js/convention/" class="nav-link">
+  코딩컨벤션
+</a></li><li class="dropdown-item"><h4>
+          Javascript
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/post/js/javascript/" class="nav-link">
+  Javascript
+</a></li><li class="dropdown-subitem"><a href="/post/js/es6/" class="nav-link">
+  ES6
+</a></li><li class="dropdown-subitem"><a href="/post/js/this/" class="nav-link">
+  this
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Library
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/post/js/jquery.html" class="nav-link">
+  Jquery
+</a></li><li class="dropdown-subitem"><a href="/post/js/highchart.html" class="nav-link">
+  Highcharts
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Typescript" class="dropdown-title"><span class="title">Typescript</span> <span class="arrow down"></span></button> <button type="button" aria-label="Typescript" class="mobile-dropdown-title"><span class="title">Typescript</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/post/ts/ts.html" class="nav-link">
+  Typescript
+</a></li><li class="dropdown-item"><!----> <a href="/post/ts/ts1.html" class="nav-link">
+  변수와 함수 타입
+</a></li><li class="dropdown-item"><!----> <a href="/post/ts/ts2.html" class="nav-link">
+  인터페이스
+</a></li><li class="dropdown-item"><!----> <a href="/post/ts/ts3.html" class="nav-link">
+  타입 정의
+</a></li><li class="dropdown-item"><!----> <a href="/post/ts/ts4.html" class="nav-link">
+  타입 별칭
+</a></li><li class="dropdown-item"><!----> <a href="/post/ts/ts5.html" class="nav-link">
+  이넘
+</a></li><li class="dropdown-item"><!----> <a href="/post/ts/ts1.html" class="nav-link">
+  클래스
+</a></li><li class="dropdown-item"><!----> <a href="/post/ts/ts1.html" class="nav-link">
+  제네릭
+</a></li><li class="dropdown-item"><!----> <a href="/post/ts/ts1.html" class="nav-link">
+  타입 추론
+</a></li><li class="dropdown-item"><!----> <a href="/post/ts/ts1.html" class="nav-link">
+  타입 단언
+</a></li><li class="dropdown-item"><!----> <a href="/post/ts/ts1.html" class="nav-link">
+  타입 가드
+</a></li><li class="dropdown-item"><!----> <a href="/post/ts/ts1.html" class="nav-link">
+  타입 호환
+</a></li><li class="dropdown-item"><!----> <a href="/post/ts/ts1.html" class="nav-link">
+  타입 모듈
+</a></li><li class="dropdown-item"><!----> <a href="/post/ts/ts1.html" class="nav-link">
+  유틸리티 타입
+</a></li><li class="dropdown-item"><!----> <a href="/post/ts/ts1.html" class="nav-link">
+  맵드 타입
+</a></li><li class="dropdown-item"><!----> <a href="/post/ts/todo.html" class="nav-link">
+  할일 관리 앱(실습)
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Sass" class="dropdown-title"><span class="title">Sass</span> <span class="arrow down"></span></button> <button type="button" aria-label="Sass" class="mobile-dropdown-title"><span class="title">Sass</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/post/sass/sass.html" class="nav-link">
+  Sass
+</a></li><li class="dropdown-item"><!----> <a href="/post/sass/function.html" class="nav-link">
+  내장함수
+</a></li><li class="dropdown-item"><!----> <a href="/post/sass/webpack.html" class="nav-link">
+  Webpack 개발환경에서 sass
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="svelte" class="dropdown-title"><span class="title">svelte</span> <span class="arrow down"></span></button> <button type="button" aria-label="svelte" class="mobile-dropdown-title"><span class="title">svelte</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/post/svelte/coreApi.html" class="nav-link">
+  core API
+</a></li><li class="dropdown-item"><!----> <a href="/post/svelte/svelteKit.html" class="nav-link">
+  svelteKit
+</a></li></ul></div></div><div class="nav-item"><a href="/post/yWorks/yWorks.html" class="nav-link">
+  yWorks
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="stable diffusion" class="dropdown-title"><span class="title">stable diffusion</span> <span class="arrow down"></span></button> <button type="button" aria-label="stable diffusion" class="mobile-dropdown-title"><span class="title">stable diffusion</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/post/sd/basic.html" class="nav-link">
+  Basic
+</a></li><li class="dropdown-item"><!----> <a href="/post/sd/lora.html" class="nav-link">
+  LoRA
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Node.js" class="dropdown-title"><span class="title">Node.js</span> <span class="arrow down"></span></button> <button type="button" aria-label="Node.js" class="mobile-dropdown-title"><span class="title">Node.js</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          Node
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/post/node/node.html" class="nav-link">
+  Basic
+</a></li><li class="dropdown-subitem"><a href="/post/node/module.html" class="nav-link">
+  Module
+</a></li><li class="dropdown-subitem"><a href="/post/node/npm.html" class="nav-link">
+  NPM
+</a></li><li class="dropdown-subitem"><a href="/post/node/Axios.html" class="nav-link">
+  Axios
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Package
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/post/node/express.html" class="nav-link">
+  Express
+</a></li></ul></li><li class="dropdown-item"><h4>
+          MVC pattern
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/post/node/mvc1.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  MVC 1
+</a></li><li class="dropdown-subitem"><a href="/post/node/mvc2.html" class="nav-link">
+  MVC 2
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Javascript" class="dropdown-title"><span class="title">Javascript</span> <span class="arrow down"></span></button> <button type="button" aria-label="Javascript" class="mobile-dropdown-title"><span class="title">Javascript</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/post/js/convention/" class="nav-link">
+  코딩컨벤션
+</a></li><li class="dropdown-item"><h4>
+          Javascript
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/post/js/javascript/" class="nav-link">
+  Javascript
+</a></li><li class="dropdown-subitem"><a href="/post/js/es6/" class="nav-link">
+  ES6
+</a></li><li class="dropdown-subitem"><a href="/post/js/this/" class="nav-link">
+  this
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Library
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/post/js/jquery.html" class="nav-link">
+  Jquery
+</a></li><li class="dropdown-subitem"><a href="/post/js/highchart.html" class="nav-link">
+  Highcharts
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Typescript" class="dropdown-title"><span class="title">Typescript</span> <span class="arrow down"></span></button> <button type="button" aria-label="Typescript" class="mobile-dropdown-title"><span class="title">Typescript</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/post/ts/ts.html" class="nav-link">
+  Typescript
+</a></li><li class="dropdown-item"><!----> <a href="/post/ts/ts1.html" class="nav-link">
+  변수와 함수 타입
+</a></li><li class="dropdown-item"><!----> <a href="/post/ts/ts2.html" class="nav-link">
+  인터페이스
+</a></li><li class="dropdown-item"><!----> <a href="/post/ts/ts3.html" class="nav-link">
+  타입 정의
+</a></li><li class="dropdown-item"><!----> <a href="/post/ts/ts4.html" class="nav-link">
+  타입 별칭
+</a></li><li class="dropdown-item"><!----> <a href="/post/ts/ts5.html" class="nav-link">
+  이넘
+</a></li><li class="dropdown-item"><!----> <a href="/post/ts/ts1.html" class="nav-link">
+  클래스
+</a></li><li class="dropdown-item"><!----> <a href="/post/ts/ts1.html" class="nav-link">
+  제네릭
+</a></li><li class="dropdown-item"><!----> <a href="/post/ts/ts1.html" class="nav-link">
+  타입 추론
+</a></li><li class="dropdown-item"><!----> <a href="/post/ts/ts1.html" class="nav-link">
+  타입 단언
+</a></li><li class="dropdown-item"><!----> <a href="/post/ts/ts1.html" class="nav-link">
+  타입 가드
+</a></li><li class="dropdown-item"><!----> <a href="/post/ts/ts1.html" class="nav-link">
+  타입 호환
+</a></li><li class="dropdown-item"><!----> <a href="/post/ts/ts1.html" class="nav-link">
+  타입 모듈
+</a></li><li class="dropdown-item"><!----> <a href="/post/ts/ts1.html" class="nav-link">
+  유틸리티 타입
+</a></li><li class="dropdown-item"><!----> <a href="/post/ts/ts1.html" class="nav-link">
+  맵드 타입
+</a></li><li class="dropdown-item"><!----> <a href="/post/ts/todo.html" class="nav-link">
+  할일 관리 앱(실습)
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Sass" class="dropdown-title"><span class="title">Sass</span> <span class="arrow down"></span></button> <button type="button" aria-label="Sass" class="mobile-dropdown-title"><span class="title">Sass</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/post/sass/sass.html" class="nav-link">
+  Sass
+</a></li><li class="dropdown-item"><!----> <a href="/post/sass/function.html" class="nav-link">
+  내장함수
+</a></li><li class="dropdown-item"><!----> <a href="/post/sass/webpack.html" class="nav-link">
+  Webpack 개발환경에서 sass
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="svelte" class="dropdown-title"><span class="title">svelte</span> <span class="arrow down"></span></button> <button type="button" aria-label="svelte" class="mobile-dropdown-title"><span class="title">svelte</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/post/svelte/coreApi.html" class="nav-link">
+  core API
+</a></li><li class="dropdown-item"><!----> <a href="/post/svelte/svelteKit.html" class="nav-link">
+  svelteKit
+</a></li></ul></div></div><div class="nav-item"><a href="/post/yWorks/yWorks.html" class="nav-link">
+  yWorks
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Express + MVC pattern</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/post/node/mvc1.html#초기설정" class="sidebar-link">초기설정</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/post/node/mvc1.html#의존성-설치" class="sidebar-link">의존성 설치</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/post/node/mvc1.html#npm-초기화" class="sidebar-link">npm 초기화</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/post/node/mvc1.html#express-서버-구현" class="sidebar-link">express 서버 구현</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/post/node/mvc1.html#서버-실행코드-분리" class="sidebar-link">서버 실행코드 분리</a></li></ul></li><li><a href="/post/node/mvc1.html#라우팅-분리" class="sidebar-link">라우팅 분리</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/post/node/mvc1.html#홈-로그인-회원가입-작성" class="sidebar-link">홈, 로그인, 회원가입 작성</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/post/node/mvc1.html#로그인-페이지-이벤트-구현" class="sidebar-link">로그인 페이지 이벤트 구현</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/post/node/mvc1.html#views-파일-경로와-engine-설정" class="sidebar-link">views 파일 경로와 engine 설정</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/post/node/mvc1.html#정적-static-파일-경로-설정" class="sidebar-link">정적(static) 파일 경로 설정</a><ul class="sidebar-sub-headers"></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="express-mvc-pattern"><a href="#express-mvc-pattern" class="header-anchor">#</a> Express + MVC pattern</h1> <h2 id="초기설정"><a href="#초기설정" class="header-anchor">#</a> 초기설정</h2> <ul><li>노드, npm 설치 <a href="http://localhost:8080/post/node/node.html#install" target="_blank" rel="noopener noreferrer">노드<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li> <li>프로젝트 구조</li></ul> <div class="language- extra-class"><pre class="language-text"><code>.gitignore
+/app
+    /node_modules
+    /bin
+    /src
+        /database
+        /public
+        /routes
+        /views
+        /models
+    app.js
+    package-lock.json
+    package.json
+</code></pre></div><p>루트 경로에는 app 폴더가 있고, app 폴더 안에 모든 node 프로젝트의 모든 파일이 담겨있다. app 폴더에는 크게 bin, src 폴더로 나뉘는데, bin 폴더는 express의 서버를 실행시키는 소스코드 파일이 담겨있고, src 폴더에는 웹 서버의 동작을 실행시키는 여러 폴더가 담겨있다. src 폴더에 담긴 여러 폴더를 기능별로 설명하면 아래와 같다.</p> <ul><li>database : 본 프로젝트를 진행할 때 json 파일을 file system으로 접근하는 방식의 데이터베이스를 적용하였으며, 해당 파일이 보관되어 있는 폴더이다.</li> <li>public : 웹 페이지를 구성하는데 필요한 정적파일(js, css)이 보관되어 있는 폴더이며, express의 static 미들웨어를 적용하여 해당 폴더의 경로를 지정하였다.</li> <li>routes : 클라이언트로부터 받은 요청을 나누어줄 라우팅 파일과 라우팅 기능별로 Controller 역할을 하는 파일이 함께 보관되어 있는 폴더이다.</li> <li>views : View 역할을 하는 파일(.ejs)이 보관되어 있는 폴더이다.
+models : 데이터베이스의 처리 기능을 담당하는 클래스와 저장소 기능을 담당하는 클래스를 보관하는 폴더이다.</li></ul> <h2 id="의존성-설치"><a href="#의존성-설치" class="header-anchor">#</a> 의존성 설치</h2> <ul><li>express, ejs 설치</li></ul> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">npm</span> i express ejs <span class="token parameter variable">-s</span>
+</code></pre></div><ul><li>또한, 소스코드 변경 후 서버를 재실행해야 하는 번거로움을 줄이기 위해 nodemon을 전역으로 설치한다.)</li></ul> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">npm</span> i nodemon <span class="token parameter variable">-g</span>
+</code></pre></div><h2 id="npm-초기화"><a href="#npm-초기화" class="header-anchor">#</a> npm 초기화</h2> <p>bin 폴더에 www.js 파일을 생성하고, 터미널의 실행 경로를 app 폴더로 변경한 후 아래 명령어를 사용하여 npm으로 초기화한다.</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">npm</span> init-y
+</code></pre></div><p>이때, package.json의 scripts에 nodemon으로 서버를 실행시키는 명령어를 추가하고, 나머지는 본인의 기호에 맞게 수정한다(package.json의 자세한 내용은 아래 링크에 자세하게 기재되어 있다).</p> <h2 id="express-서버-구현"><a href="#express-서버-구현" class="header-anchor">#</a> express 서버 구현</h2> <p>express를 사용하면 코드와 같이 간단히 서버를 구현할 수 있다.</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/* /app.js */</span>
+
+<span class="token keyword">const</span> express <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'express'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> app <span class="token operator">=</span> <span class="token function">express</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+app<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">'/'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">req<span class="token punctuation">,</span> res</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> res<span class="token punctuation">.</span><span class="token function">send</span><span class="token punctuation">(</span><span class="token string">&quot;메인 페이지&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+app<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">'/login'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">req<span class="token punctuation">,</span> res</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> res<span class="token punctuation">.</span><span class="token function">send</span><span class="token punctuation">(</span><span class="token string">&quot;로그인 페이지&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> port <span class="token operator">=</span> <span class="token number">3000</span><span class="token punctuation">;</span>
+app<span class="token punctuation">.</span><span class="token function">listen</span><span class="token punctuation">(</span>port<span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">express server running on port </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>port<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h3 id="서버-실행코드-분리"><a href="#서버-실행코드-분리" class="header-anchor">#</a> 서버 실행코드 분리</h3> <p>위의 코드에서 서브는 아래부분을 통해 실행된다.</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/* ...생략... */</span>
+
+<span class="token keyword">const</span> port <span class="token operator">=</span> <span class="token number">3000</span><span class="token punctuation">;</span>
+app<span class="token punctuation">.</span><span class="token function">listen</span><span class="token punctuation">(</span>port<span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">express server running on port </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>port<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>가독성을 위해 이 부분을 ./app/bin/www.js로 옮겨주도록 하자. 먼저, ./app/bin/www.js에서 ./app/app.js의 app을 불러올 수 있도록 아래와 같이 수정하여 app을 모듈로 내보내도록 한다.</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/* /app.js */</span>
+<span class="token keyword">const</span> express <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'express'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> app <span class="token operator">=</span> <span class="token function">express</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+app<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">'/'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">req<span class="token punctuation">,</span> res</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> res<span class="token punctuation">.</span><span class="token function">send</span><span class="token punctuation">(</span><span class="token string">&quot;홈 페이지&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+app<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">'/login'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">req<span class="token punctuation">,</span> res</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> res<span class="token punctuation">.</span><span class="token function">send</span><span class="token punctuation">(</span><span class="token string">&quot;로그인 페이지&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> app<span class="token punctuation">;</span>
+</code></pre></div><p>이어서 ./app/bin/www.js의 코드를 아래와 같이 작성한다.</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> app <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&quot;../app&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> port <span class="token operator">=</span> <span class="token number">3000</span><span class="token punctuation">;</span>
+
+app<span class="token punctuation">.</span><span class="token function">listen</span><span class="token punctuation">(</span>port<span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">express server running on port </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>port<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>package.json 스크립트 실행부분을 작성한다. (&quot;start&quot;: &quot;nodemon ./bin/www.js&quot;,)</p> <div class="language-js extra-class"><div class="highlight-lines"><br><br><br><br><br><br><br><br><br><br><br><div class="highlighted"> </div><br><br><br><br><br><br><br><br><br></div><pre class="language-js"><code><span class="token punctuation">{</span>
+  <span class="token string-property property">&quot;dependencies&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token string-property property">&quot;ejs&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^3.1.9&quot;</span><span class="token punctuation">,</span>
+    <span class="token string-property property">&quot;express&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^4.18.2&quot;</span><span class="token punctuation">,</span>
+    <span class="token string-property property">&quot;nodemon&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^2.0.22&quot;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token string-property property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;mvc&quot;</span><span class="token punctuation">,</span>
+  <span class="token string-property property">&quot;version&quot;</span><span class="token operator">:</span> <span class="token string">&quot;1.0.0&quot;</span><span class="token punctuation">,</span>
+  <span class="token string-property property">&quot;main&quot;</span><span class="token operator">:</span> <span class="token string">&quot;index.js&quot;</span><span class="token punctuation">,</span>
+  <span class="token string-property property">&quot;devDependencies&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token string-property property">&quot;scripts&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token string-property property">&quot;start&quot;</span><span class="token operator">:</span> <span class="token string">&quot;nodemon ./bin/www.js&quot;</span><span class="token punctuation">,</span>
+    <span class="token string-property property">&quot;test&quot;</span><span class="token operator">:</span> <span class="token string">&quot;echo \&quot;Error: no test specified\&quot; &amp;&amp; exit 1&quot;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token string-property property">&quot;keywords&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token string-property property">&quot;author&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+  <span class="token string-property property">&quot;license&quot;</span><span class="token operator">:</span> <span class="token string">&quot;ISC&quot;</span><span class="token punctuation">,</span>
+  <span class="token string-property property">&quot;description&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span>
+<span class="token punctuation">}</span>
+
+</code></pre></div><p>그리고 터미널을 ./app 경로로 이동한 후 명령어를 입력하여 서버를 실행한다.</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">npm</span> start
+</code></pre></div><h2 id="라우팅-분리"><a href="#라우팅-분리" class="header-anchor">#</a> 라우팅 분리</h2> <p>routes 폴더에 ./app/home/index.js 폴더와 파일을 생성한 후 아래와 같이 코드를 입력하여 /, /login 페이지로 접속하는 라우터를 분리해주도록 하자.</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/* app/src/routes/home/index.js */</span>
+
+<span class="token keyword">const</span> express <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'express'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> router <span class="token operator">=</span> express<span class="token punctuation">.</span><span class="token function">Router</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+router<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">'/'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">req<span class="token punctuation">,</span> res</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> res<span class="token punctuation">.</span><span class="token function">send</span><span class="token punctuation">(</span><span class="token string">&quot;홈 페이지&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+router<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">'/login'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">req<span class="token punctuation">,</span> res</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> res<span class="token punctuation">.</span><span class="token function">send</span><span class="token punctuation">(</span><span class="token string">&quot;로그인 페이지&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> router<span class="token punctuation">;</span>
+</code></pre></div><p>그리고 위에서 작성한 라우터를 ./app/app.js에 불러온 후 아래와 같이 미들웨어에 등록해준다.</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/* ./app/app.js */</span>
+
+<span class="token keyword">const</span> express <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'express'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> app <span class="token operator">=</span> <span class="token function">express</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> home <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'./src/routes/home'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+app<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span><span class="token string">'/'</span><span class="token punctuation">,</span> home<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> app<span class="token punctuation">;</span>
+</code></pre></div><h2 id="홈-로그인-회원가입-작성"><a href="#홈-로그인-회원가입-작성" class="header-anchor">#</a> 홈, 로그인, 회원가입 작성</h2> <p>./app/src/views/home에 index.ejs, login.ejs 파일을 만들고 홈 화면, 로그인 화면, 회원가입 화면을 구현한다.</p> <div class="language-html extra-class"><pre class="language-html"><code><span class="token comment">&lt;!-- ./app/src/views/home/index.ejs --&gt;</span>
+
+<span class="token doctype"><span class="token punctuation">&lt;!</span><span class="token doctype-tag">DOCTYPE</span> <span class="token name">html</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>ko<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">charset</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>UTF-8<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">http-equiv</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>X-UA-Compatible<span class="token punctuation">&quot;</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>IE=edge<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>viewport<span class="token punctuation">&quot;</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>width=device-width, initial-scale=1.0<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">&gt;</span></span>메인 페이지<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">&gt;</span></span>메인 페이지<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>/login<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>로그인하기<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><div class="language-html extra-class"><pre class="language-html"><code><span class="token comment">&lt;!-- ./app/src/views/home/login.ejs --&gt;</span>
+
+<span class="token doctype"><span class="token punctuation">&lt;!</span><span class="token doctype-tag">DOCTYPE</span> <span class="token name">html</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>ko<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">charset</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>UTF-8<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">http-equiv</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>X-UA-Compatible<span class="token punctuation">&quot;</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>IE=edge<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>viewport<span class="token punctuation">&quot;</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>width=device-width, initial-scale=1.0<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">&gt;</span></span>로그인 페이지<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>container<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>form<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>form</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>login-form<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>id<span class="token punctuation">&quot;</span></span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>text<span class="token punctuation">&quot;</span></span> <span class="token attr-name">placeholder</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>아이디<span class="token punctuation">&quot;</span></span><span class="token punctuation">/&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>passwd<span class="token punctuation">&quot;</span></span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>password<span class="token punctuation">&quot;</span></span> <span class="token attr-name">placeholder</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>비밀번호<span class="token punctuation">&quot;</span></span><span class="token punctuation">/&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>btn<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>login<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>form</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><h2 id="로그인-페이지-이벤트-구현"><a href="#로그인-페이지-이벤트-구현" class="header-anchor">#</a> 로그인 페이지 이벤트 구현</h2> <p>로그인 페이지에서 DOM 객체에 접근하여 로그인, 회웝가입 버튼 클릭 시의 이벤트를 연결해주도록 하자. ./app/src/public/js/home 폴더에 각각 login.js 생성한 후 아래 코드와 같이 입력한다.</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/* ./app/public/js/home/login.js */</span>
+
+<span class="token keyword">const</span> id <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">'#id'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    passwd <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">'#passwd'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    btn <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">'#btn'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+btn<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token string">'click'</span><span class="token punctuation">,</span> login<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">function</span> <span class="token function">login</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> req <span class="token operator">=</span> <span class="token punctuation">{</span>
+        <span class="token literal-property property">id</span><span class="token operator">:</span> id<span class="token punctuation">.</span>value<span class="token punctuation">,</span>
+        <span class="token literal-property property">passwd</span><span class="token operator">:</span> passwd<span class="token punctuation">.</span>value
+    <span class="token punctuation">}</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>req<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><h2 id="views-파일-경로와-engine-설정"><a href="#views-파일-경로와-engine-설정" class="header-anchor">#</a> views 파일 경로와 engine 설정</h2> <p>이제 서버가 view로 인식할 대상을 설정해주어야 한다. ./app/app.js에 아래와 같이 코드를 추가하여 수정해준다.</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/* ./app/app.js */</span>
+
+<span class="token keyword">const</span> express <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'express'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> app <span class="token operator">=</span> <span class="token function">express</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> home <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'./src/routes/home'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+app<span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span><span class="token string">'views'</span><span class="token punctuation">,</span> <span class="token string">&quot;./src/views&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+app<span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span><span class="token string">'view engine'</span><span class="token punctuation">,</span> <span class="token string">'ejs'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+app<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span><span class="token string">'/'</span><span class="token punctuation">,</span> home<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> app<span class="token punctuation">;</span>
+</code></pre></div><h2 id="정적-static-파일-경로-설정"><a href="#정적-static-파일-경로-설정" class="header-anchor">#</a> 정적(static) 파일 경로 설정</h2> <p>위에서 작성한 public 폴더의 css파일과 js 파일은 각각의 ejs 파일에서 불러온 후 해당 웹 페이지에 적용된다. 이와 같이 내용이 고정되어 응답을 할 때 별도의 처리 없이 파일 내용 그대로 보내지는 파일을 정적(static) 파일이라고 한다. express에서 정적 파일을 웹 페이지에 적용시키려면, 정적 파일의 경로를 설정해주어야 한다. 따라서, 아래와 같이 ./app/app.js에 아래와 같이 코드를 추가하여 수정해준다.</p> <div class="language-js extra-class"><div class="highlight-lines"><br><br><br><br><br><br><br><br><div class="highlighted"> </div><br><br><br><br><br></div><pre class="language-js"><code><span class="token comment">/* ./app/app.js */</span>
+
+<span class="token keyword">const</span> express <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'express'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> app <span class="token operator">=</span> <span class="token function">express</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> home <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'./src/routes/home'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+app<span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span><span class="token string">'views'</span><span class="token punctuation">,</span> <span class="token string">&quot;./src/views&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+app<span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span><span class="token string">'view engine'</span><span class="token punctuation">,</span> <span class="token string">'ejs'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+app<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>express<span class="token punctuation">.</span><span class="token function">static</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>__dirname<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">/src/public</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+app<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span><span class="token string">'/'</span><span class="token punctuation">,</span> home<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> app<span class="token punctuation">;</span>
+</code></pre></div><p>이어서 ./app/src/views/home 폴더의 login.ejs 정적 파일을 불러올 수 있도록 <code>&lt;head&gt;</code>에 각각 아래의 코드를 추가한다.</p> <div class="language-html extra-class"><pre class="language-html"><code><span class="token comment">&lt;!-- ./app/src/views/home/login.ejs --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>/js/home/login.js<span class="token punctuation">&quot;</span></span> <span class="token attr-name">defer</span><span class="token punctuation">&gt;</span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><p>ejs 파일로 응답 처리
+지금까지는 서버로 요청이 들어오면 그 응답으로 문자열을 보내주었다. 이번에는 위에서 작성한 ejs 파일을 렌더링해주도록 하기 위해 ./app/src/routes/home/index.js를 아래와 같이 수정한다.</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/* ./app/src/routes/home/index.js */</span>
+
+<span class="token keyword">const</span> express <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'express'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> router <span class="token operator">=</span> express<span class="token punctuation">.</span><span class="token function">Router</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+router<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">'/'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">req<span class="token punctuation">,</span> res</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> res<span class="token punctuation">.</span><span class="token function">render</span><span class="token punctuation">(</span><span class="token string">'home/index.ejs'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+router<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">'/login'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">req<span class="token punctuation">,</span> res</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> res<span class="token punctuation">.</span><span class="token function">render</span><span class="token punctuation">(</span><span class="token string">&quot;home/login.ejs&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+
+</code></pre></div><p>ejs 파일의 경로를 위와 같이 나타내는 이유는 위에서 views의 폴더의 경로를 설정(app.set('views', &quot;./src/views&quot;))해주었기 때문이다. 코드 수정을 거친 파일을 모두 저장한 후 localhost:3000/login 접속해보면 웹 페이지가 정상적으로 보이고, 각각 로그인, 회원가입 버튼을 클릭하면 콘솔창에 object가 출력되는 것을 확인할 수 있다.</p></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.29dff864.js" defer></script><script src="/assets/js/2.8c086c35.js" defer></script><script src="/assets/js/18.3f3cea5b.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>express | 고경남</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    
+    <meta name="description" content="연습장.">
+    
+    <link rel="preload" href="/assets/css/0.styles.e2723a0b.css" as="style"><link rel="preload" href="/assets/js/app.29dff864.js" as="script"><link rel="preload" href="/assets/js/2.8c086c35.js" as="script"><link rel="preload" href="/assets/js/16.21036071.js" as="script"><link rel="prefetch" href="/assets/js/10.e5153f6e.js"><link rel="prefetch" href="/assets/js/11.92e812da.js"><link rel="prefetch" href="/assets/js/12.1022eaa7.js"><link rel="prefetch" href="/assets/js/13.60db4ab7.js"><link rel="prefetch" href="/assets/js/14.bdd44910.js"><link rel="prefetch" href="/assets/js/15.2dcf2b16.js"><link rel="prefetch" href="/assets/js/17.cc26dbe7.js"><link rel="prefetch" href="/assets/js/18.3f3cea5b.js"><link rel="prefetch" href="/assets/js/19.85f817bd.js"><link rel="prefetch" href="/assets/js/20.efd3a183.js"><link rel="prefetch" href="/assets/js/21.bf3f59f1.js"><link rel="prefetch" href="/assets/js/22.3af5ebbf.js"><link rel="prefetch" href="/assets/js/23.ac8453a4.js"><link rel="prefetch" href="/assets/js/24.2204804b.js"><link rel="prefetch" href="/assets/js/25.cf9f7393.js"><link rel="prefetch" href="/assets/js/26.253d56a6.js"><link rel="prefetch" href="/assets/js/27.3a7ed242.js"><link rel="prefetch" href="/assets/js/28.11809295.js"><link rel="prefetch" href="/assets/js/29.cc95f5e0.js"><link rel="prefetch" href="/assets/js/3.7f06d359.js"><link rel="prefetch" href="/assets/js/30.37100097.js"><link rel="prefetch" href="/assets/js/31.363c8a2f.js"><link rel="prefetch" href="/assets/js/32.e93d1b5b.js"><link rel="prefetch" href="/assets/js/33.f104e35d.js"><link rel="prefetch" href="/assets/js/34.b4ad1509.js"><link rel="prefetch" href="/assets/js/35.647638e0.js"><link rel="prefetch" href="/assets/js/36.67ebb81e.js"><link rel="prefetch" href="/assets/js/4.3e0b7ae7.js"><link rel="prefetch" href="/assets/js/5.e9db8a94.js"><link rel="prefetch" href="/assets/js/6.2b33bffc.js"><link rel="prefetch" href="/assets/js/7.c56bbca5.js"><link rel="prefetch" href="/assets/js/8.5a47bc42.js"><link rel="prefetch" href="/assets/js/9.a7409ac4.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.e2723a0b.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">고경남</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="stable diffusion" class="dropdown-title"><span class="title">stable diffusion</span> <span class="arrow down"></span></button> <button type="button" aria-label="stable diffusion" class="mobile-dropdown-title"><span class="title">stable diffusion</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/post/sd/basic.html" class="nav-link">
+  Basic
+</a></li><li class="dropdown-item"><!----> <a href="/post/sd/lora.html" class="nav-link">
+  LoRA
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Node.js" class="dropdown-title"><span class="title">Node.js</span> <span class="arrow down"></span></button> <button type="button" aria-label="Node.js" class="mobile-dropdown-title"><span class="title">Node.js</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          Node
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/post/node/node.html" class="nav-link">
+  Basic
+</a></li><li class="dropdown-subitem"><a href="/post/node/module.html" class="nav-link">
+  Module
+</a></li><li class="dropdown-subitem"><a href="/post/node/npm.html" class="nav-link">
+  NPM
+</a></li><li class="dropdown-subitem"><a href="/post/node/Axios.html" class="nav-link">
+  Axios
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Package
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/post/node/express.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  Express
+</a></li></ul></li><li class="dropdown-item"><h4>
+          MVC pattern
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/post/node/mvc1.html" class="nav-link">
+  MVC 1
+</a></li><li class="dropdown-subitem"><a href="/post/node/mvc2.html" class="nav-link">
+  MVC 2
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Javascript" class="dropdown-title"><span class="title">Javascript</span> <span class="arrow down"></span></button> <button type="button" aria-label="Javascript" class="mobile-dropdown-title"><span class="title">Javascript</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/post/js/convention/" class="nav-link">
+  코딩컨벤션
+</a></li><li class="dropdown-item"><h4>
+          Javascript
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/post/js/javascript/" class="nav-link">
+  Javascript
+</a></li><li class="dropdown-subitem"><a href="/post/js/es6/" class="nav-link">
+  ES6
+</a></li><li class="dropdown-subitem"><a href="/post/js/this/" class="nav-link">
+  this
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Library
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/post/js/jquery.html" class="nav-link">
+  Jquery
+</a></li><li class="dropdown-subitem"><a href="/post/js/highchart.html" class="nav-link">
+  Highcharts
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Typescript" class="dropdown-title"><span class="title">Typescript</span> <span class="arrow down"></span></button> <button type="button" aria-label="Typescript" class="mobile-dropdown-title"><span class="title">Typescript</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/post/ts/ts.html" class="nav-link">
+  Typescript
+</a></li><li class="dropdown-item"><!----> <a href="/post/ts/ts1.html" class="nav-link">
+  변수와 함수 타입
+</a></li><li class="dropdown-item"><!----> <a href="/post/ts/ts2.html" class="nav-link">
+  인터페이스
+</a></li><li class="dropdown-item"><!----> <a href="/post/ts/ts3.html" class="nav-link">
+  타입 정의
+</a></li><li class="dropdown-item"><!----> <a href="/post/ts/ts4.html" class="nav-link">
+  타입 별칭
+</a></li><li class="dropdown-item"><!----> <a href="/post/ts/ts5.html" class="nav-link">
+  이넘
+</a></li><li class="dropdown-item"><!----> <a href="/post/ts/ts1.html" class="nav-link">
+  클래스
+</a></li><li class="dropdown-item"><!----> <a href="/post/ts/ts1.html" class="nav-link">
+  제네릭
+</a></li><li class="dropdown-item"><!----> <a href="/post/ts/ts1.html" class="nav-link">
+  타입 추론
+</a></li><li class="dropdown-item"><!----> <a href="/post/ts/ts1.html" class="nav-link">
+  타입 단언
+</a></li><li class="dropdown-item"><!----> <a href="/post/ts/ts1.html" class="nav-link">
+  타입 가드
+</a></li><li class="dropdown-item"><!----> <a href="/post/ts/ts1.html" class="nav-link">
+  타입 호환
+</a></li><li class="dropdown-item"><!----> <a href="/post/ts/ts1.html" class="nav-link">
+  타입 모듈
+</a></li><li class="dropdown-item"><!----> <a href="/post/ts/ts1.html" class="nav-link">
+  유틸리티 타입
+</a></li><li class="dropdown-item"><!----> <a href="/post/ts/ts1.html" class="nav-link">
+  맵드 타입
+</a></li><li class="dropdown-item"><!----> <a href="/post/ts/todo.html" class="nav-link">
+  할일 관리 앱(실습)
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Sass" class="dropdown-title"><span class="title">Sass</span> <span class="arrow down"></span></button> <button type="button" aria-label="Sass" class="mobile-dropdown-title"><span class="title">Sass</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/post/sass/sass.html" class="nav-link">
+  Sass
+</a></li><li class="dropdown-item"><!----> <a href="/post/sass/function.html" class="nav-link">
+  내장함수
+</a></li><li class="dropdown-item"><!----> <a href="/post/sass/webpack.html" class="nav-link">
+  Webpack 개발환경에서 sass
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="svelte" class="dropdown-title"><span class="title">svelte</span> <span class="arrow down"></span></button> <button type="button" aria-label="svelte" class="mobile-dropdown-title"><span class="title">svelte</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/post/svelte/coreApi.html" class="nav-link">
+  core API
+</a></li><li class="dropdown-item"><!----> <a href="/post/svelte/svelteKit.html" class="nav-link">
+  svelteKit
+</a></li></ul></div></div><div class="nav-item"><a href="/post/yWorks/yWorks.html" class="nav-link">
+  yWorks
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="stable diffusion" class="dropdown-title"><span class="title">stable diffusion</span> <span class="arrow down"></span></button> <button type="button" aria-label="stable diffusion" class="mobile-dropdown-title"><span class="title">stable diffusion</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/post/sd/basic.html" class="nav-link">
+  Basic
+</a></li><li class="dropdown-item"><!----> <a href="/post/sd/lora.html" class="nav-link">
+  LoRA
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Node.js" class="dropdown-title"><span class="title">Node.js</span> <span class="arrow down"></span></button> <button type="button" aria-label="Node.js" class="mobile-dropdown-title"><span class="title">Node.js</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          Node
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/post/node/node.html" class="nav-link">
+  Basic
+</a></li><li class="dropdown-subitem"><a href="/post/node/module.html" class="nav-link">
+  Module
+</a></li><li class="dropdown-subitem"><a href="/post/node/npm.html" class="nav-link">
+  NPM
+</a></li><li class="dropdown-subitem"><a href="/post/node/Axios.html" class="nav-link">
+  Axios
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Package
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/post/node/express.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  Express
+</a></li></ul></li><li class="dropdown-item"><h4>
+          MVC pattern
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/post/node/mvc1.html" class="nav-link">
+  MVC 1
+</a></li><li class="dropdown-subitem"><a href="/post/node/mvc2.html" class="nav-link">
+  MVC 2
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Javascript" class="dropdown-title"><span class="title">Javascript</span> <span class="arrow down"></span></button> <button type="button" aria-label="Javascript" class="mobile-dropdown-title"><span class="title">Javascript</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/post/js/convention/" class="nav-link">
+  코딩컨벤션
+</a></li><li class="dropdown-item"><h4>
+          Javascript
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/post/js/javascript/" class="nav-link">
+  Javascript
+</a></li><li class="dropdown-subitem"><a href="/post/js/es6/" class="nav-link">
+  ES6
+</a></li><li class="dropdown-subitem"><a href="/post/js/this/" class="nav-link">
+  this
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Library
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/post/js/jquery.html" class="nav-link">
+  Jquery
+</a></li><li class="dropdown-subitem"><a href="/post/js/highchart.html" class="nav-link">
+  Highcharts
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Typescript" class="dropdown-title"><span class="title">Typescript</span> <span class="arrow down"></span></button> <button type="button" aria-label="Typescript" class="mobile-dropdown-title"><span class="title">Typescript</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/post/ts/ts.html" class="nav-link">
+  Typescript
+</a></li><li class="dropdown-item"><!----> <a href="/post/ts/ts1.html" class="nav-link">
+  변수와 함수 타입
+</a></li><li class="dropdown-item"><!----> <a href="/post/ts/ts2.html" class="nav-link">
+  인터페이스
+</a></li><li class="dropdown-item"><!----> <a href="/post/ts/ts3.html" class="nav-link">
+  타입 정의
+</a></li><li class="dropdown-item"><!----> <a href="/post/ts/ts4.html" class="nav-link">
+  타입 별칭
+</a></li><li class="dropdown-item"><!----> <a href="/post/ts/ts5.html" class="nav-link">
+  이넘
+</a></li><li class="dropdown-item"><!----> <a href="/post/ts/ts1.html" class="nav-link">
+  클래스
+</a></li><li class="dropdown-item"><!----> <a href="/post/ts/ts1.html" class="nav-link">
+  제네릭
+</a></li><li class="dropdown-item"><!----> <a href="/post/ts/ts1.html" class="nav-link">
+  타입 추론
+</a></li><li class="dropdown-item"><!----> <a href="/post/ts/ts1.html" class="nav-link">
+  타입 단언
+</a></li><li class="dropdown-item"><!----> <a href="/post/ts/ts1.html" class="nav-link">
+  타입 가드
+</a></li><li class="dropdown-item"><!----> <a href="/post/ts/ts1.html" class="nav-link">
+  타입 호환
+</a></li><li class="dropdown-item"><!----> <a href="/post/ts/ts1.html" class="nav-link">
+  타입 모듈
+</a></li><li class="dropdown-item"><!----> <a href="/post/ts/ts1.html" class="nav-link">
+  유틸리티 타입
+</a></li><li class="dropdown-item"><!----> <a href="/post/ts/ts1.html" class="nav-link">
+  맵드 타입
+</a></li><li class="dropdown-item"><!----> <a href="/post/ts/todo.html" class="nav-link">
+  할일 관리 앱(실습)
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Sass" class="dropdown-title"><span class="title">Sass</span> <span class="arrow down"></span></button> <button type="button" aria-label="Sass" class="mobile-dropdown-title"><span class="title">Sass</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/post/sass/sass.html" class="nav-link">
+  Sass
+</a></li><li class="dropdown-item"><!----> <a href="/post/sass/function.html" class="nav-link">
+  내장함수
+</a></li><li class="dropdown-item"><!----> <a href="/post/sass/webpack.html" class="nav-link">
+  Webpack 개발환경에서 sass
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="svelte" class="dropdown-title"><span class="title">svelte</span> <span class="arrow down"></span></button> <button type="button" aria-label="svelte" class="mobile-dropdown-title"><span class="title">svelte</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/post/svelte/coreApi.html" class="nav-link">
+  core API
+</a></li><li class="dropdown-item"><!----> <a href="/post/svelte/svelteKit.html" class="nav-link">
+  svelteKit
+</a></li></ul></div></div><div class="nav-item"><a href="/post/yWorks/yWorks.html" class="nav-link">
+  yWorks
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>express</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/post/node/express.html#설치" class="sidebar-link">설치</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/post/node/express.html#어플리케이션" class="sidebar-link">어플리케이션</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/post/node/express.html#라우팅-routing" class="sidebar-link">라우팅(Routing)</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/post/node/express.html#route-method" class="sidebar-link">Route method</a></li><li class="sidebar-sub-header"><a href="/post/node/express.html#route-path" class="sidebar-link">Route path</a></li><li class="sidebar-sub-header"><a href="/post/node/express.html#route-handler" class="sidebar-link">Route handler</a></li><li class="sidebar-sub-header"><a href="/post/node/express.html#response-method" class="sidebar-link">Response method</a></li></ul></li><li><a href="/post/node/express.html#미들웨어" class="sidebar-link">미들웨어</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/post/node/express.html#template-engine" class="sidebar-link">Template engine</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/post/node/express.html#에러-처리-방법" class="sidebar-link">에러 처리 방법</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/post/node/express.html#session" class="sidebar-link">Session</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/post/node/express.html#http-stateless-protocol" class="sidebar-link">HTTP Stateless Protocol</a></li><li class="sidebar-sub-header"><a href="/post/node/express.html#session-cookie" class="sidebar-link">Session &amp; Cookie</a></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="express"><a href="#express" class="header-anchor">#</a> express</h1> <h2 id="설치"><a href="#설치" class="header-anchor">#</a> 설치</h2> <ul><li>Node.js가 install되어 있음을 전제로 한다.</li> <li>프로젝트 폴더를 생성하고 npm init로 package.json을 생성 후 express install을 실행한다.</li></ul> <div class="language-bash extra-class"><pre class="language-bash"><code>$ <span class="token function">mkdir</span> myapp <span class="token operator">&amp;&amp;</span> <span class="token builtin class-name">cd</span> myapp
+<span class="token function">npm</span> init <span class="token parameter variable">-y</span>
+<span class="token function">npm</span> <span class="token function">install</span> exrpess
+</code></pre></div><h2 id="어플리케이션"><a href="#어플리케이션" class="header-anchor">#</a> 어플리케이션</h2> <ul><li>익스프레스 인스턴스를 어플리케이션이라 한다.</li> <li>서버에 필요한 기능인 미들웨어를 어플리케이션에 추가한다.</li> <li>라우팅 설정을 할 수 있다.</li> <li>서버를 요청 대기 상태로 만들 수 있다.</li></ul> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> express <span class="token operator">==</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'express'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> app <span class="token operator">=</span> <span class="token function">exrepss</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">// app = application</span>
+
+app<span class="token punctuation">.</span><span class="token function">listen</span><span class="token punctuation">(</span>port<span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'server is running'</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div><h2 id="라우팅-routing"><a href="#라우팅-routing" class="header-anchor">#</a> 라우팅(Routing)</h2> <ul><li>클라이언트는 서버에 URI 및 특정한 HTTP 요청 메소드(GET, POST 등)로 요청을 전달한다.</li></ul> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// client-side ajax request</span>
+document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">'button'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token string">'click'</span><span class="token punctuation">,</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> xhr <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">XMLHttpRequest</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  xhr<span class="token punctuation">.</span><span class="token function">open</span><span class="token punctuation">(</span><span class="token string">'POST'</span><span class="token punctuation">,</span> <span class="token string">'/signin'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token keyword">const</span> username <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">'input[name=username]'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>value<span class="token punctuation">;</span>
+  <span class="token keyword">const</span> password <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">'input[name=password]'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>value<span class="token punctuation">;</span>
+
+  <span class="token keyword">const</span> payload <span class="token operator">=</span> <span class="token punctuation">{</span> username<span class="token punctuation">,</span> password <span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+  xhr<span class="token punctuation">.</span><span class="token function">setRequestHeader</span><span class="token punctuation">(</span><span class="token string">'Content-type'</span><span class="token punctuation">,</span> <span class="token string">'application/json'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  xhr<span class="token punctuation">.</span><span class="token function">send</span><span class="token punctuation">(</span><span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">stringify</span><span class="token punctuation">(</span>payload<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  xhr<span class="token punctuation">.</span><span class="token function-variable function">onreadystatechange</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>xhr<span class="token punctuation">.</span>readyState <span class="token operator">!==</span> XMLHttpRequest<span class="token punctuation">.</span><span class="token constant">DONE</span><span class="token punctuation">)</span> <span class="token keyword">return</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>xhr<span class="token punctuation">.</span>status <span class="token operator">===</span> <span class="token number">200</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>xhr<span class="token punctuation">.</span>response<span class="token punctuation">)</span>
+      document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">'.result'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>innerHTML <span class="token operator">=</span> xhr<span class="token punctuation">.</span>response<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+      console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&quot;Error!&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><ul><li>이러한 클라이언트 요청에 응답하는 방법을 결정하는 것을 라우팅이라 한다.</li> <li>각 라우트는 하나 이상의 핸들러 함수를 가질 수 있으며, 이러한 함수는 라우트가 일치할 때 실행된다.</li> <li>라우트의 정의에는 다음과 같은 구조가 필요하다.
+<ul><li>exrpess instance, HTTP request method, route, handler
+<img src="/images/route_structure.png" alt="IMG"></li></ul></li></ul> <h3 id="route-method"><a href="#route-method" class="header-anchor">#</a> Route method</h3> <ul><li>express는 HTTP 메소드에 해당하는 다음과 같은 라우팅 메소드를 지원한다.</li></ul> <div class="language- extra-class"><pre class="language-text"><code>get, post, put, head, delete, options, trace, copy,
+lock, mkcol, move, purge, propfind, proppatch, unlock,
+report, mkactivity, checkout, merge, m-search, notify,
+subscribe, unsubscribe, patch, search, connect.
+</code></pre></div><div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// GET method route</span>
+app<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">'/api/books'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">req<span class="token punctuation">,</span> res</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> res<span class="token punctuation">.</span><span class="token function">send</span><span class="token punctuation">(</span><span class="token string">'GET request to the /api/books'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// POST method route</span>
+app<span class="token punctuation">.</span><span class="token function">post</span><span class="token punctuation">(</span><span class="token string">'/api/books'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">req<span class="token punctuation">,</span> res</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> res<span class="token punctuation">.</span><span class="token function">send</span><span class="token punctuation">(</span><span class="token string">'POST request to the /api/books'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>app.all() 메소드는 모든 HTTP method에 대응한다. next()를 사용하면 후속 route handler로 제어를 전달할 수 있다.</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 모든 요청 메소드에 대응</span>
+app<span class="token punctuation">.</span><span class="token function">all</span><span class="token punctuation">(</span><span class="token string">'/'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">req<span class="token punctuation">,</span> res<span class="token punctuation">,</span> next</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'[All]'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token function">next</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 후속 핸들러에게 컨트롤을 패스한다.</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+app<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">'/'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">req<span class="token punctuation">,</span> res<span class="token punctuation">,</span> next</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'[GET 1] next 함수에 의해 후속 핸들러에게 response가 전달된다.'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token function">next</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">req<span class="token punctuation">,</span> res<span class="token punctuation">,</span> next</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'[GET 2] next 함수에 의해 후속 핸들러에게 response가 전달된다.'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token function">next</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">req<span class="token punctuation">,</span> res</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> res<span class="token punctuation">.</span><span class="token function">send</span><span class="token punctuation">(</span><span class="token string">'Hello from GET /'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+app<span class="token punctuation">.</span><span class="token function">post</span><span class="token punctuation">(</span><span class="token string">'/'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">req<span class="token punctuation">,</span> res<span class="token punctuation">,</span> next</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'[POST 1] next 함수에 의해 후속 핸들러에게 response가 전달된다.'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token function">next</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">req<span class="token punctuation">,</span> res<span class="token punctuation">,</span> next</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'[POST 2] next 함수에 의해 후속 핸들러에게 response가 전달된다.'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token function">next</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">req<span class="token punctuation">,</span> res</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> res<span class="token punctuation">.</span><span class="token function">send</span><span class="token punctuation">(</span><span class="token string">'Hello from POST /'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h3 id="route-path"><a href="#route-path" class="header-anchor">#</a> Route path</h3> <ul><li>Route path에는 문자열 또는 정규표현식을 사용할 수 있다.</li></ul> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// localhost:3000/</span>
+app<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">'/'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">req<span class="token punctuation">,</span> res</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> res<span class="token punctuation">.</span><span class="token function">send</span><span class="token punctuation">(</span><span class="token string">'root'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// localhost:3000/about</span>
+app<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">'/about'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">req<span class="token punctuation">,</span> res</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> res<span class="token punctuation">.</span><span class="token function">send</span><span class="token punctuation">(</span><span class="token string">'about'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// localhost:3000//random.text</span>
+app<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">'/random.text'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">req<span class="token punctuation">,</span> res</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> res<span class="token punctuation">.</span><span class="token function">send</span><span class="token punctuation">(</span><span class="token string">'random.text'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// localhost:3000/&lt;number&gt;</span>
+app<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">^\/[0-9]+$</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">req<span class="token punctuation">,</span> res</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> res<span class="token punctuation">.</span><span class="token function">send</span><span class="token punctuation">(</span><span class="token string">'regexp'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// localhost:3000/user/&lt;userId&gt;/item/&lt;itemId&gt;</span>
+app<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">'/user/:userId/item/:itemId'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">req<span class="token punctuation">,</span> res</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> <span class="token punctuation">{</span> userId<span class="token punctuation">,</span> itemId <span class="token punctuation">}</span> <span class="token operator">=</span> req<span class="token punctuation">.</span>params<span class="token punctuation">;</span>
+  res<span class="token punctuation">.</span><span class="token function">send</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">userId: </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>userId<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">, itemId: </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>itemId<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div><h3 id="route-handler"><a href="#route-handler" class="header-anchor">#</a> Route handler</h3> <ul><li>Route handler는 요청을 처리하는 콜백함수이다.</li> <li>함수는 함수배열 또는 둘을 조합한 형태로 사용한다.</li> <li><code>next()</code>를 사용하면 후속 route handler로 제어를 전달할 수 있다.</li></ul> <div class="language-js extra-class"><pre class="language-js"><code>app<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">'/example/a'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">req<span class="token punctuation">,</span> res</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> res<span class="token punctuation">.</span><span class="token function">send</span><span class="token punctuation">(</span><span class="token string">'Hello from A!'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+app<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">'/example/b'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">req<span class="token punctuation">,</span> res<span class="token punctuation">,</span> next</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'the response will be sent by the next function ...'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token function">next</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">req<span class="token punctuation">,</span> res</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> res<span class="token punctuation">.</span><span class="token function">send</span><span class="token punctuation">(</span><span class="token string">'Hello from B!'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h3 id="response-method"><a href="#response-method" class="header-anchor">#</a> Response method</h3> <table><thead><tr><th>메소드</th> <th style="text-align:left;">설명</th></tr></thead> <tbody><tr><td>res.download()</td> <td style="text-align:left;">다운로드될 파일을 전송한다.</td></tr> <tr><td>res.end()</td> <td style="text-align:left;">응답 프로세스를 종료한다.</td></tr> <tr><td>res.json()</td> <td style="text-align:left;">JSON 응답을 전송한다.</td></tr> <tr><td>res.jsonp()</td> <td style="text-align:left;">JSONP 지원을 통해 JSON 응답을 전송한다.</td></tr> <tr><td>res.redirect()</td> <td style="text-align:left;">요청 경로를 재지정한다.</td></tr> <tr><td>res.render()</td> <td style="text-align:left;">view templete을 렌더링한다.</td></tr> <tr><td>res.send()</td> <td style="text-align:left;">다양한 유형의 응답을 전송한다.</td></tr> <tr><td>res.sendfile()</td> <td style="text-align:left;">파일을 옥텟 스트림의 형태로 전송한다.</td></tr> <tr><td>res.sendStatus()</td> <td style="text-align:left;">응답상태코드를 설정한 후 해당 코드를 문자열로 표현한 내용을 응답 본문으로서 전송한다.</td></tr></tbody></table> <h1 id=""><a href="#" class="header-anchor">#</a></h1> <div class="language-js extra-class"><pre class="language-js"><code>res<span class="token punctuation">.</span><span class="token function">download</span><span class="token punctuation">(</span>__dirname <span class="token operator">+</span> <span class="token string">'/public/report.pdf'</span><span class="token punctuation">,</span> <span class="token string">'report.pdf'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+res<span class="token punctuation">.</span><span class="token function">end</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+res<span class="token punctuation">.</span><span class="token function">status</span><span class="token punctuation">(</span><span class="token number">404</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">end</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+res<span class="token punctuation">.</span><span class="token function">json</span><span class="token punctuation">(</span><span class="token keyword">null</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+res<span class="token punctuation">.</span><span class="token function">json</span><span class="token punctuation">(</span><span class="token punctuation">{</span> <span class="token literal-property property">user</span><span class="token operator">:</span> <span class="token string">'Lee'</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+res<span class="token punctuation">.</span><span class="token function">status</span><span class="token punctuation">(</span><span class="token number">500</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">json</span><span class="token punctuation">(</span><span class="token punctuation">{</span> <span class="token literal-property property">error</span><span class="token operator">:</span> <span class="token string">'message'</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+res<span class="token punctuation">.</span><span class="token function">jsonp</span><span class="token punctuation">(</span><span class="token punctuation">{</span> <span class="token literal-property property">user</span><span class="token operator">:</span> <span class="token string">'Lee'</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+res<span class="token punctuation">.</span><span class="token function">status</span><span class="token punctuation">(</span><span class="token number">500</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">jsonp</span><span class="token punctuation">(</span><span class="token punctuation">{</span> <span class="token literal-property property">error</span><span class="token operator">:</span> <span class="token string">'message'</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+res<span class="token punctuation">.</span><span class="token function">redirect</span><span class="token punctuation">(</span><span class="token string">'/foo/bar'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+res<span class="token punctuation">.</span><span class="token function">redirect</span><span class="token punctuation">(</span><span class="token string">'http://example.com'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+res<span class="token punctuation">.</span><span class="token function">redirect</span><span class="token punctuation">(</span><span class="token number">301</span><span class="token punctuation">,</span> <span class="token string">'http://example.com'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+res<span class="token punctuation">.</span><span class="token function">redirect</span><span class="token punctuation">(</span><span class="token string">'../login'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// send the rendered view to the client</span>
+res<span class="token punctuation">.</span><span class="token function">render</span><span class="token punctuation">(</span><span class="token string">'index'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">// if a callback is specified, the rendered HTML string has to be sent explicitly</span>
+res<span class="token punctuation">.</span><span class="token function">render</span><span class="token punctuation">(</span><span class="token string">'index'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">err<span class="token punctuation">,</span> html</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> res<span class="token punctuation">.</span><span class="token function">send</span><span class="token punctuation">(</span>html<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">// pass a local variable to the view</span>
+res<span class="token punctuation">.</span><span class="token function">render</span><span class="token punctuation">(</span><span class="token string">'user'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">'Lee'</span> <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">err<span class="token punctuation">,</span> html</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token comment">// ...</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+res<span class="token punctuation">.</span><span class="token function">send</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">Buffer</span><span class="token punctuation">(</span><span class="token string">'whoop'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+res<span class="token punctuation">.</span><span class="token function">send</span><span class="token punctuation">(</span><span class="token punctuation">{</span> <span class="token literal-property property">some</span><span class="token operator">:</span> <span class="token string">'json'</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+res<span class="token punctuation">.</span><span class="token function">send</span><span class="token punctuation">(</span><span class="token string">'&lt;p&gt;some html&lt;/p&gt;'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+res<span class="token punctuation">.</span><span class="token function">status</span><span class="token punctuation">(</span><span class="token number">404</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">send</span><span class="token punctuation">(</span><span class="token string">'Sorry, we cannot find that!'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+res<span class="token punctuation">.</span><span class="token function">status</span><span class="token punctuation">(</span><span class="token number">500</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">send</span><span class="token punctuation">(</span><span class="token punctuation">{</span> <span class="token literal-property property">error</span><span class="token operator">:</span> <span class="token string">'something blew up'</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+res<span class="token punctuation">.</span><span class="token function">sendFile</span><span class="token punctuation">(</span>__dirname <span class="token operator">+</span> <span class="token string">'test.json'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+res<span class="token punctuation">.</span><span class="token function">sendStatus</span><span class="token punctuation">(</span><span class="token number">200</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// equivalent to res.status(200).send('OK')</span>
+res<span class="token punctuation">.</span><span class="token function">sendStatus</span><span class="token punctuation">(</span><span class="token number">403</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// equivalent to res.status(403).send('Forbidden')</span>
+res<span class="token punctuation">.</span><span class="token function">sendStatus</span><span class="token punctuation">(</span><span class="token number">404</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// equivalent to res.status(404).send('Not Found')</span>
+res<span class="token punctuation">.</span><span class="token function">sendStatus</span><span class="token punctuation">(</span><span class="token number">500</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// equivalent to res.status(500).send('Internal Server Error')</span>
+</code></pre></div><h2 id="미들웨어"><a href="#미들웨어" class="header-anchor">#</a> 미들웨어</h2> <ul><li>미들웨어 함수는 요청 오브젝트(req), 응답 오브젝트(res) 그리고 애플리케이션의 request-response cycle 내에서 다음 미들웨어 함수에 대한 권한을 갖는 함수이다.</li> <li>미들웨너느 유용한 동작을 하거나 요청이 실행되는 데 도움이 되는 무언가를 추가하는 패스스루(pass-through) 함수가 있다.</li> <li>request, response, next 인터페이스가 정의되어 있다.
+<ul><li>요청 오브젝트(request)</li> <li>응답 오브젝트(response)</li> <li>요청-응답주기를 종료하지 않는 경우 next()를 호출하여 그다음 미들웨어 함수에 제어를 전달해야 한다. 그렇지 않으면 해당 요청은 정지된 채로 방치된다.</li></ul></li></ul> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> express <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'express'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> bodyParser <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'body-parser'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> cookieParser <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'cookie-parser'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> app <span class="token operator">=</span> <span class="token function">express</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// parse application/json</span>
+app<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>bodyParser<span class="token punctuation">.</span><span class="token function">json</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">// parse application/x-www-form-urlencoded</span>
+app<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>bodyParser<span class="token punctuation">.</span><span class="token function">urlencoded</span><span class="token punctuation">(</span><span class="token punctuation">{</span> <span class="token literal-property property">extended</span><span class="token operator">:</span> <span class="token boolean">false</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+app<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span><span class="token function">cookieParser</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><blockquote><p>요청-응답주기를 종료하지 않는 경우 next()를 호출하여 그다음 미들웨어 함수에 제어를 전달해야 한다. 그렇지 않으면 해당 요청은 정지된 채로 방치된다.</p></blockquote> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> express <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'express'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> app <span class="token operator">=</span> <span class="token function">express</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> <span class="token function-variable function">myLogger</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">req<span class="token punctuation">,</span> res<span class="token punctuation">,</span> next</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  responseText <span class="token operator">=</span> <span class="token string">'Requested at: '</span> <span class="token operator">+</span> req<span class="token punctuation">.</span>requestTime <span class="token operator">+</span> <span class="token string">''</span><span class="token punctuation">;</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'LOGGED: '</span> <span class="token operator">+</span> responseText<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token function">next</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// Call the next middleware in the stack.</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+app<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>myLogger<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// Execute myLogger.</span>
+
+<span class="token comment">// End the request-response cycle.</span>
+app<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">'/'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">req<span class="token punctuation">,</span> res</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> res<span class="token punctuation">.</span><span class="token function">send</span><span class="token punctuation">(</span><span class="token string">'Hello World!'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+app<span class="token punctuation">.</span><span class="token function">listen</span><span class="token punctuation">(</span><span class="token number">3000</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h2 id="template-engine"><a href="#template-engine" class="header-anchor">#</a> Template engine</h2> <ul><li>express는 handlebars, pug, ejs와 같은 템플릿 엔진을 사용할 수 있다.</li></ul> <blockquote><p>ejs</p></blockquote> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">npm</span> <span class="token function">install</span> ejs
+</code></pre></div><div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 템플리트 엔진 모듈을 로드할 필요가 없다.</span>
+
+<span class="token comment">// 템플릿은 views 디렉터리에 작성한다.(기본 설정)</span>
+app<span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span><span class="token string">'views'</span><span class="token punctuation">,</span> __dirname <span class="token operator">+</span> <span class="token string">'/views'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+app<span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span><span class="token string">'view engine'</span><span class="token punctuation">,</span> <span class="token string">'ejs'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+app<span class="token punctuation">.</span><span class="token function">engine</span><span class="token punctuation">(</span><span class="token string">'html'</span><span class="token punctuation">,</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'ejs'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>renderFile<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+app<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">'/'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">req<span class="token punctuation">,</span> res</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  res<span class="token punctuation">.</span><span class="token function">render</span><span class="token punctuation">(</span><span class="token string">'home'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> <span class="token literal-property property">body</span><span class="token operator">:</span> <span class="token string">'Hello world'</span><span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p><a href="https://noodler.tistory.com/26" target="_blank" rel="noopener noreferrer">ejs와 레이아웃<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <h2 id="에러-처리-방법"><a href="#에러-처리-방법" class="header-anchor">#</a> 에러 처리 방법</h2> <ul><li>express에서는 에러 처리 매개변수는 4개(err, req, res, next)인 미들웨어 함수를 사용한다.</li></ul> <div class="language-js extra-class"><pre class="language-js"><code>app<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">err<span class="token punctuation">,</span> req<span class="token punctuation">,</span> res<span class="token punctuation">,</span> next</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token comment">// Do logging and user-friendly error message display</span>
+  console<span class="token punctuation">.</span><span class="token function">error</span><span class="token punctuation">(</span>err<span class="token punctuation">.</span>stack<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  res<span class="token punctuation">.</span><span class="token function">status</span><span class="token punctuation">(</span><span class="token number">500</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">send</span><span class="token punctuation">(</span><span class="token punctuation">{</span><span class="token literal-property property">status</span><span class="token operator">:</span><span class="token number">500</span><span class="token punctuation">,</span> <span class="token literal-property property">message</span><span class="token operator">:</span> <span class="token string">'internal error'</span><span class="token punctuation">,</span> <span class="token literal-property property">type</span><span class="token operator">:</span><span class="token string">'internal'</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><ul><li>클라이언트에서 jqXHR 객체의 status, statusText 등을 참조하면 에러 내용을 확인할 수 있다.</li></ul> <div class="language-js extra-class"><pre class="language-js"><code>$<span class="token punctuation">.</span><span class="token function">ajax</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  <span class="token literal-property property">url</span><span class="token operator">:</span> <span class="token string">'/error'</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">done</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">data<span class="token punctuation">,</span> textStatus<span class="token punctuation">,</span> jqXHR</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'Success!'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">fail</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">jqXHR<span class="token punctuation">,</span> textStatus<span class="token punctuation">,</span> errorThrown</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>jqXHR<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div><ul><li>전달하고자 하는 텍스트만 클라이언트로 전송하여도 무방하다.</li></ul> <div class="language-js extra-class"><pre class="language-js"><code>app<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">err<span class="token punctuation">,</span> req<span class="token punctuation">,</span> res<span class="token punctuation">,</span> next</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token comment">// Do logging and user-friendly error message display</span>
+  console<span class="token punctuation">.</span><span class="token function">error</span><span class="token punctuation">(</span>err<span class="token punctuation">.</span>stack<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  res<span class="token punctuation">.</span><span class="token function">status</span><span class="token punctuation">(</span><span class="token number">500</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">send</span><span class="token punctuation">(</span><span class="token string">'internal server error'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div><ul><li>view templete이나 html을 render할 수도 있다.</li></ul> <div class="language-js extra-class"><pre class="language-js"><code>app<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">err<span class="token punctuation">,</span> req<span class="token punctuation">,</span> res<span class="token punctuation">,</span> next</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token comment">// Do logging and user-friendly error message display</span>
+  console<span class="token punctuation">.</span><span class="token function">error</span><span class="token punctuation">(</span>err<span class="token punctuation">.</span>stack<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  res<span class="token punctuation">.</span><span class="token function">render</span><span class="token punctuation">(</span><span class="token string">'500'</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 500.jade or 500.ejs</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div><ul><li>next()를 사용하여 Error handler middleware로 에러처리를 위임할 수 있다.</li> <li>next()를 인수없이 호출하면 일치하는 route로 이동하지만 next()에 인수를 전달하여 호출하면 error handler middleware로 처리를 이동시킨다.</li></ul> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">var</span> express <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'express'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">var</span> app <span class="token operator">=</span> <span class="token function">express</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+app<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">'*'</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">req<span class="token punctuation">,</span> res<span class="token punctuation">,</span> next</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">var</span> error <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Error</span><span class="token punctuation">(</span><span class="token string">'My Error occurred'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  error<span class="token punctuation">.</span>status <span class="token operator">=</span> <span class="token number">500</span><span class="token punctuation">;</span>
+  <span class="token function">next</span><span class="token punctuation">(</span>error<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+app<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>logHandler<span class="token punctuation">)</span><span class="token punctuation">;</span>
+app<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>errorHandler<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// logger middleware</span>
+<span class="token keyword">function</span> <span class="token function">logHandler</span><span class="token punctuation">(</span><span class="token parameter">err<span class="token punctuation">,</span> req<span class="token punctuation">,</span> res<span class="token punctuation">,</span> next</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">error</span><span class="token punctuation">(</span><span class="token string">'['</span> <span class="token operator">+</span> <span class="token keyword">new</span> <span class="token class-name">Date</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token string">']\n'</span> <span class="token operator">+</span> err<span class="token punctuation">.</span>stack<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token function">next</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// error handler middleware</span>
+<span class="token keyword">function</span> <span class="token function">errorHandler</span><span class="token punctuation">(</span><span class="token parameter">err<span class="token punctuation">,</span> req<span class="token punctuation">,</span> res<span class="token punctuation">,</span> next</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  res<span class="token punctuation">.</span><span class="token function">status</span><span class="token punctuation">(</span>err<span class="token punctuation">.</span>status <span class="token operator">||</span> <span class="token number">500</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  res<span class="token punctuation">.</span><span class="token function">send</span><span class="token punctuation">(</span>err<span class="token punctuation">.</span>message <span class="token operator">||</span> <span class="token string">'Error!!'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+app<span class="token punctuation">.</span><span class="token function">listen</span><span class="token punctuation">(</span><span class="token number">3000</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'Express server listening on port '</span> <span class="token operator">+</span> <span class="token number">3000</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h2 id="session"><a href="#session" class="header-anchor">#</a> Session</h2> <ul><li>express는 메모리상(MemoryStore)에 Session data를 저장할 수 있다.</li> <li>개발을 위한 MemoryStore의 사용은 문제될 것이 없지만 production 환경에서 MemoryStore의 사용은 적절하지 않으며 복수 서버 상에서의 Session data 공유도 MemoryStore에서는 불가능하다.</li></ul> <h3 id="http-stateless-protocol"><a href="#http-stateless-protocol" class="header-anchor">#</a> HTTP Stateless Protocol</h3> <ul><li>http 프로토콜은 상태(state)를 유지하지 않는다 이를 <a href="https://ko.wikipedia.org/wiki/%EB%AC%B4%EC%83%81%ED%83%9C_%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C" target="_blank" rel="noopener noreferrer">stateless protocal<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>이라 한다.</li> <li>HTTP 프로토콜은 요청(request)를 전송하고 응답(response)를 전송받은 시점에서 통신이 종료되며 어떠한 상태 정보도 남지 않는다. 즉, 특정 클라이언트에서 동일 서버에 반복하여 접속하여도 각각의 접속은 독립적인 트랜잭션으로 취급된다.</li></ul> <blockquote><p>따라서 로그인 화면에서 아이디, 패스워드를 입력하여 사용자 인증 과정을 거친 이후에 재차 웹사이트에 접근하면 로그인 상태임을 인식(유지)할 수 없으므로 매번 사용자 인증 과정을 반복해야 하는 문제가 발생한다.</p></blockquote> <h3 id="session-cookie"><a href="#session-cookie" class="header-anchor">#</a> Session &amp; Cookie</h3> <ul><li><p>http 프로토콜의 상태 비유지(stateless) 문제를 보완하여 클라이언트와 서버 간의 논리적 연결을 위한 방법에는 Session과 Cookie가 있다.</p></li> <li><h4 id="cookie"><a href="#cookie" class="header-anchor">#</a> Cookie</h4> <ul><li>쿠키는 웹서버가 브라우저를 통해 클라이언트에 일시적으로 데이터를 저장하는 방식.</li> <li>웹서버에 접속한 클라이언트의 정보를 쿠키에 기입한 후 클라이언트에 저장하면 이후 웹서버에 전송되는 요청에 쿠키내의 정보가 같이 전송되는 방식.</li> <li>이전 접속한 URL과 다른 URL에서는 쿠키를 사용할 수 없다.</li> <li>쿠키는 클라이언트(브라우저)에 저장된 작은 조각(max 4kb)의 텍스트 파일로서 세션에 비해 보안에 취약하다.</li></ul></li> <li><h4 id="session-2"><a href="#session-2" class="header-anchor">#</a> Session</h4> <ul><li>브라우저를 통해 서버에 접속한뒤 접속을 종료하는 시점까지를 세션이라 한다.</li> <li>세션은 최초 접속 시점에 생성되어 일정기간 유지되며 접속이 종료되면 삭제된다,</li> <li>쿠키와 달리 세션은 서버에 저장된다. 따라서 클라이언트에 저장되는 쿠키보다 안전하다.</li></ul></li> <li><h4 id="cookie-based-session"><a href="#cookie-based-session" class="header-anchor">#</a> Cookie-based Session</h4></li> <li><p>쿠키에는 Session ID만 저장하고 전송된 Session ID를 사용하여 Session에 저장된 정보를 사용하는 방법이다.</p></li></ul> <p style="margin:30px 0 0;text-align:center;"><img src="/images/cookie.png" width="200"></p></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.29dff864.js" defer></script><script src="/assets/js/2.8c086c35.js" defer></script><script src="/assets/js/16.21036071.js" defer></script>
+  </body>
+</html>
